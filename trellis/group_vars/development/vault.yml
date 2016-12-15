@@ -7,4 +7,5 @@ vault_wordpress_sites:
   2k17.fr:
     admin_password: "LyKKpZ4vnEXD"
     env:
+      acf_pro_key: "b3JkZXJfaWQ9NzE4ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAxLTAzIDE3OjI1OjM0"
       db_password: "4jdbLW45nfFN"
