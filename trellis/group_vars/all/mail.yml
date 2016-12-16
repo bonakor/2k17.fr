@@ -1,5 +1,5 @@
 # Documentation: https://roots.io/trellis/docs/mail/
-mail_smtp_server: smtp.mailgun.org:465
+mail_smtp_server: smtp.mailgun.org:587
 mail_admin: postmaster@2k17.fr
 mail_hostname: 2k17.fr
 mail_user: postmaster@2k17.fr
