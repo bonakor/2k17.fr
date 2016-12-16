@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "445ac307027b0649e9ea5116bb3ae124",
-    "content-hash": "59c8a7787150e9659f1d80285d6bed78",
+    "hash": "20f35040bef697134289dba7f835fae5",
+    "content-hash": "e647a00c45e315bf5e64f3dda9da2450",
     "packages": [
         {
             "name": "composer/installers",
@@ -405,26 +405,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/autodescription/"
-        },
-        {
-            "name": "wpackagist-plugin/check-email",
-            "version": "0.5.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/check-email/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/check-email.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/check-email/"
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
