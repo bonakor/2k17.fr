@@ -1,4 +1,4 @@
-<?php
+<?/*<?php
 if (post_password_required()) {
   return;
 }
@@ -34,3 +34,4 @@ if (post_password_required()) {
 
   <?php comment_form(); ?>
 </section>
+*/?>

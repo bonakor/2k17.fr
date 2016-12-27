@@ -1,0 +1,170 @@
+body.home {
+  background-color: $bleu;
+}
+
+.home {
+  .card {
+    border: none;
+    background: transparent;
+    margin: 0;
+  }
+  .avatar-container, .author {
+    margin: auto;
+  }
+  .card-img {
+    border-radius: 0;
+  }
+
+  .card-text,
+  h1 {
+    color: #fff;
+  }
+h1 {
+  font-size: 1.5rem;
+}
+  .card-img-overlay {
+    background: $violet-t;
+  }
+
+  figure .avatar {
+    margin: auto;
+  }
+  .avatar-container {
+    margin-right: .8rem;
+  }
+
+  .col-xs-6 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+.una {
+  .meta {
+  padding-top: 60%
+}
+  .entry-title {
+    background: $violet;
+    display: inline-flex;
+    font-size: 3rem;
+  }
+
+}
+  .type_article {
+    background: $vert;
+    color: #000;
+    font-style: italic;
+    display: inline-flex;
+  }
+
+  .timer {
+    width: 0.8rem;
+    margin: 0 0.3rem 0 1rem;
+    fill: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  .quadra {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article-metas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .quadra {
+    article {
+      margin-bottom: 0.8rem;
+    }
+
+
+    .image-une {
+      margin-left: 15%;
+      -moz-box-shadow: 0.5em 0.5em 0 0 $violet;
+      -webkit-box-shadow: 0.5em 0.5em 0 0 $violet;
+      -o-box-shadow: 0.5em 0.5em 0 0 $violet;
+      box-shadow: 0.5em 0.5em 0 0 $violet;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=$violet, Direction=134, Strength=0);
+    }
+
+    .card-img-overlay {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .type_article {
+      margin-top: 20%;
+    }
+
+    .chrono {
+      position: absolute;
+      top: 3%;
+      right: 13%;
+    }
+
+    time {
+      text-align: right;
+    }
+  }
+
+  .diapa {
+
+    .carousel-item {
+      height: 500px;
+      background-color: $violet;
+    }
+  }
+
+  .lista {
+    article {
+      padding: 0 1em;
+    }
+
+    .image-une {
+      margin-left: 1rem;
+      -moz-box-shadow: 0.4em 0.4em 0 0 $vert;
+      -webkit-box-shadow: 0.4em 0.4em 0 0 $vert;
+      -o-box-shadow: 0.4em 0.4em 0 0 $vert;
+      box-shadow: 0.4em 0.4em 0 0 $vert;
+    }
+
+    .article-metas {
+      width: 97%;
+      margin-top: 5%;
+    }
+
+    .chrono {
+      position: absolute;
+      right: 2%;
+    }
+
+    .entry-title {
+      margin-top: 15%;
+      display: inline-flex;
+      background-color: $violet;
+    }
+    .byline {
+      margin: auto;
+    }
+    time {
+      position: absolute;
+right: 3%;
+margin: auto;
+    }
+  }
+
+  .categoria {
+        .carousel-item {
+      height: 500px;
+      background-color: $vert;
+    }
+  }
+}
