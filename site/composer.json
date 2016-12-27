@@ -35,15 +35,11 @@
   "type": "package",
   "package": {
     "name": "advanced-custom-fields/advanced-custom-fields-pro",
-    "version": "5.5.2",
+    "version": "5.3.9.2",
     "type": "wordpress-plugin",
     "dist": {
       "type": "zip",
-      "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
-    },
-    "require": {
-      "philippbaschke/acf-pro-installer": "^1.0",
-      "composer/installers": "^1.0"
+      "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzE4ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAxLTAzIDE3OjI1OjM0"
     }
   }
 }
@@ -59,7 +55,8 @@
     "wpackagist-plugin/google-sitemap-generator": "^4.0",
     "roots/soil": "3.7.1",
     "wpackagist-plugin/co-authors-plus": "^3.2",
-    "wpackagist-plugin/regenerate-thumbnails": "^2.2"
+    "wpackagist-plugin/regenerate-thumbnails": "^2.2",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
