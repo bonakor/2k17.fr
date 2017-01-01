@@ -8,20 +8,25 @@ body.home {
     background: transparent;
     margin: 0;
   }
-  .avatar-container, .author {
+
+  .author,
+  .avatar-container {
     margin: auto;
   }
+
   .card-img {
     border-radius: 0;
   }
 
   .card-text,
-  h1 {
+  h2 {
     color: #fff;
   }
-h1 {
-  font-size: 1.5rem;
-}
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
   .card-img-overlay {
     background: $violet-t;
   }
@@ -29,25 +34,30 @@ h1 {
   figure .avatar {
     margin: auto;
   }
+
   .avatar-container {
-    margin-right: .8rem;
+    margin-right: 0.8rem;
   }
 
   .col-xs-6 {
     padding-left: 1em;
     padding-right: 1em;
   }
-.una {
-  .meta {
-  padding-top: 60%
-}
-  .entry-title {
-    background: $violet;
-    display: inline-flex;
-    font-size: 3rem;
+
+  .una {
+    .meta {
+      padding-top: 60%;
+    }
+
+    .entry-title {
+      background: $violet;
+      display: inline-flex;
+      font-size: 3rem;
+      padding: 0;
+      border: 0;
+    }
   }
 
-}
   .type_article {
     background: $vert;
     color: #000;
@@ -81,7 +91,6 @@ h1 {
       margin-bottom: 0.8rem;
     }
 
-
     .image-une {
       margin-left: 15%;
       -moz-box-shadow: 0.5em 0.5em 0 0 $violet;
@@ -96,7 +105,7 @@ h1 {
       padding: 0;
     }
 
-    h1 {
+    h2 {
       font-size: 1.5rem;
     }
 
@@ -116,7 +125,6 @@ h1 {
   }
 
   .diapa {
-
     .carousel-item {
       height: 500px;
       background-color: $violet;
@@ -136,6 +144,10 @@ h1 {
       box-shadow: 0.4em 0.4em 0 0 $vert;
     }
 
+    .card-img-overlay {
+      margin-left: 1rem;
+    }
+
     .article-metas {
       width: 97%;
       margin-top: 5%;
@@ -151,20 +163,277 @@ h1 {
       display: inline-flex;
       background-color: $violet;
     }
+
     .byline {
       margin: auto;
     }
+
     time {
       position: absolute;
-right: 3%;
-margin: auto;
+      right: 3%;
+      margin: auto;
     }
   }
 
   .categoria {
-        .carousel-item {
+    .carousel-item {
       height: 500px;
       background-color: $vert;
     }
   }
+}
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $violet;
+
+  .card {
+    border: none;
+    background: transparent;
+    margin: 0;
+  }
+
+  .card-img {
+    border-radius: 0;
+  }
+
+  .card-text,
+  h2 {
+    color: #fff;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-img-overlay {
+    background: $violet-t;
+  }
+
+  .col-xs-6 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .article-metas {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  article {
+    margin-bottom: 0.8rem;
+  }
+
+  .image-une {
+    margin-left: 15%;
+    -moz-box-shadow: 0.5em 0.5em 0 0 $vert;
+    -webkit-box-shadow: 0.5em 0.5em 0 0 $vert;
+    -o-box-shadow: 0.5em 0.5em 0 0 $vert;
+    box-shadow: 0.5em 0.5em 0 0 $vert;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=$vert, Direction=134, Strength=0);
+  }
+
+  .card-img-overlay {
+    margin: 0 0 0 15%;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .type_article {
+    margin-top: 20%;
+    color: $bleu;
+    background-color: $vert;
+    display: inline-flex;
+    font-style: italic;
+  }
+svg {
+  width: .8rem;
+  fill: #fff;
+  margin-right: .3rem;
+}
+  .chrono {
+    position: absolute;
+    top: 3%;
+    right: 13%;
+    color: #fff;
+  }
+
+  time {
+    text-align: right;
+  }
+  .cta {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+  }
+}
+.error404 {
+  background-color: $bleu;
+  .page-header h1 {
+    display: none;
+  }
+  .e404 {
+    max-width: 86vw;
+    margin: 2rem auto;
+    color: $violet;
+    text-align: center;
+    display: block;
+    h2 {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+.author-posts,
+.rebound {
+  max-width: 86%;
+  margin: auto;
+  a {
+    width: 100%;
+  }
+  article {
+    display:flex;
+    max-width: 100%;
+  }
+  .article-metas {
+    margin-left: 2rem;
+    width:100%;
+  }
+  .first-l {
+    display: flex;
+    justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  }
+  time {
+    display: inline-block;
+    margin-left: auto;
+  }
+      .author {
+        margin-right: auto;
+  margin-bottom: 0;
+    color: $vert;
+  }
+  h2 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  .avatar-container {
+    margin-bottom: 0;
+  }
+.image-une {
+  max-width: 4rem;
+  -webkit-box-shadow: .2rem .2rem 0px 1px $violet;
+-moz-box-shadow: .2rem .2rem 0px 1px $violet;
+box-shadow: .2rem .2rem 0px 1px $violet;
+}
+}
+.page-template-template-contact {
+  background: $bleu;
+  .contact-top {
+    background-color: $violet;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: $bleu;
+    border: none;}
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: $violet;
+      margin-left: 2rem;
+  }
+}
+.archive.author {
+background-color: $bleu;
+color: #fff;
+.page-header {
+  h1 {
+    margin-top: 50%;
+  }
+  a {
+    color: #fff;
+  }
+}
+.author-posts {
+  >h2 {
+    background-image: -webkit-linear-gradient(top,$vert,$vert);
+    background-image: linear-gradient(180deg,$vert,$vert);
+    background-position: 0 0.98em;
+    background-size: 100% 14%;
+    background-repeat: no-repeat;
+    padding: 0.1em 0;
+    -webkit-transition: background-position 0.15s;
+    transition: background-position 0.15s;
+  }
+}
+.list-posts {
+
+  margin: auto;
+  address {
+    margin: 0;
+    margin-right: auto;
+  }
+}
+  .avatar-container {
+    margin-bottom: 0;
+  }
+}
+
+.tax-personas {
+  .basic-id {
+    background-color: $bleu;
+    position:relative;
+
+  .h1eth2 {
+    position: absolute;
+    bottom: 3%;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+.bio-longue {
+  max-width: 86vw;
+  margin: auto;
+}
+
+.liens-parente {
+  background-color: $violet;
+  text-align: center;
+  .parents {display: flex;}
+  .parent {
+    margin: 2rem auto;
+  }
+  a {color: #fff;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+.pic-perso-fam {
+  max-width: 50px;
+}
+}
+.author-posts h2 {
+  color: $bleu;
+}
+.author-posts > h2 {
+  background-image: -webkit-linear-gradient(top,#3bffbe,#3bffbe);
+background-image: linear-gradient(180deg,#3bffbe,#3bffbe);
+background-position: 0 .98em;
+background-size: 100% 14%;
+background-repeat: no-repeat;
+padding: .1em 0;
+-webkit-transition: background-position .15s;
+transition: background-position .15s;
+}
+address {
+  margin: 0;
+}
 }

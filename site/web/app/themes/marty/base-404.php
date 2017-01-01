@@ -24,17 +24,6 @@ use Roots\Sage\Wrapper;
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
       </section><!-- /.content -->
-    <?php  if ( is_single() ) { ;?>
-      <section class="row related">
-        <?php get_template_part( 'templates/related' ) ?>
-      </section>
-      <section class="newsletter">
-        <?php get_template_part( 'templates/newsletter' ) ?>
-      </section>
-      <?php
-} else {
-
-}; ?>
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');

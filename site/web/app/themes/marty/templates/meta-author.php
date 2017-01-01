@@ -3,6 +3,6 @@
   <?php echo get_avatar( get_the_author_meta( 'ID' ), '35', '', '', array('class' => 'rounded-circle')); ?>
 </figure>
 <div class="author">
-<span class="card-text byline vcard d-block"><?php the_author(); ?></span>
+<address class="card-text byline vcard d-block"><?php the_author(); ?></address>
 </div>
 </div>

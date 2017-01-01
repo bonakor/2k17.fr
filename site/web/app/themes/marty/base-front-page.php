@@ -19,22 +19,11 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap container" role="document">
-      <section class="content row">
+      <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
-      </section><!-- /.content -->
-    <?php  if ( is_single() ) { ;?>
-      <section class="row related">
-        <?php get_template_part( 'templates/related' ) ?>
-      </section>
-      <section class="newsletter">
-        <?php get_template_part( 'templates/newsletter' ) ?>
-      </section>
-      <?php
-} else {
-
-}; ?>
+        </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');

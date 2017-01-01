@@ -1,0 +1,37 @@
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    width: 100%;
+  .container {
+    display: flex;
+    margin: .3rem auto;
+  }
+  .menu {
+  margin-bottom: 0;
+}
+figure {
+  margin-right: auto;
+}
+  svg {
+    height: 2rem;
+    width: 1.6rem;
+    fill: $violet;
+  }
+  ul {
+    display: inline;
+    float: right;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  }
+  .nav-link {
+    min-width: 2.2rem;
+    margin-left: .8rem;
+  }
+}

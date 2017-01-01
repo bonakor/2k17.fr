@@ -1,13 +1,30 @@
 footer {
+  background-color: $bleu;
+  margin-bottom: 2.5rem;
+
   a {
-  color: #fff;
-}
-.container {
-  display: -webkit-inline-box;
-  margin: 1rem;
-}
-figure {
-  max-width: 50px;
-height: auto;
-}
+    color: #fff;
+  }
+
+  .container {
+    display: flex;
+    margin: 1rem auto;
+  }
+
+  figure {
+    max-width: 50px;
+    height: auto;
+    margin: 0.6rem .3rem 1rem 0;
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  }
+  .nav-link {
+    margin-left: .8rem;
+  }
+
 }

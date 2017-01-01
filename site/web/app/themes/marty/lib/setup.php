@@ -35,9 +35,12 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+    add_image_size('w800', 800, 800, array( 'center', 'center' ));
   add_image_size('w1820', 1820, 2485, array( 'right', 'top' ));
   add_image_size('w1800', 1800, 2250, array( 'center', 'center' ));
-  add_image_size('w2010', 2010, 1230, array( 'right', 'top' ));
+  add_image_size('w2010', 2010, 1230, array( 'center', 'center' ));
+  add_image_size('h2036', 1500, 2036, array( 'center', 'center' ));
+  add_image_size('h2668', 1500, 2668, array( 'center', 'center' ));
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats

@@ -1,12 +1,11 @@
 <header class="banner">
   <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
+  <figure class="menu"><svg><?php get_template_part( 'assets/svg/inline', 'menu_icon.svg' ); ?></svg></figure>
+    <nav class="header-nav"><a class="nav-link" href="https://www.facebook.com/2K17-381390085538284/?fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i><span class="sr-only">Notre page Facebook</span></a>
+
+          <a class="nav-link" href="https://www.facebook.com/2K17-381390085538284/?fref=ts">BOT</a>
+
+          <a class="nav-link" href="https://twitter.com/2k17_official"><i class="fa fa-twitter" aria-hidden="true"></i>
+</a></nav>
   </div>
 </header>

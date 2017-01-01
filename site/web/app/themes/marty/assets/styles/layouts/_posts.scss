@@ -1,0 +1,303 @@
+.listicle,
+.video {
+  .page-header {
+    background-color: $violet;
+
+    .author-and-date,
+    h1 {
+      color: #fff;
+    }
+
+    .chrono {
+      display: flex;
+      position: absolute;
+      right: 5%;
+      top: 0;
+    }
+
+    .timer svg {
+      height: 0.8rem;
+    }
+  }
+}
+
+.post {
+  .card {
+    border: none;
+    background: transparent;
+    margin: 0;
+    border-radius: 0;
+  }
+  border-bottom: 0.5em solid $vert;
+padding-bottom: 3rem;
+  .type_article {
+    background: $vert;
+    font-style: italic;
+  }
+
+  time {
+    color: #fff;
+  }
+
+  p {
+    color: $bleu;
+  }
+
+  blockquote {
+    border-left: 0.8rem solid $vert;
+    border-top: 0.8rem solid $vert;
+    background: $bleu;
+    color: $vert;
+    max-width: 86%;
+    margin: auto;
+    padding: 2rem 1rem;
+
+    p {
+      color: $vert;
+      font-style: italic;
+    }
+  }
+
+  .home span {
+    color: $bleu;
+  }
+
+  .breadcrumbs {
+    margin-top: 1rem;
+    max-width: 86vw;
+  }
+
+  .breadcrumbs a {
+    margin-top: 0.6rem;
+    color: $bleu;
+    text-transform: uppercase;
+    border-top: 0.125rem solid $bleu;
+    padding: 0.1rem 0;
+    margin: 0 0.3rem;
+  }
+
+  .avatar-container {
+    margin: 0;
+  }
+
+  .entry-author span {
+    margin: auto;
+  }
+
+  .entry-author a {
+    color: #fff;
+    margin: auto;
+    padding: 0 0.5rem;
+  }
+
+  .edited {
+    background-image: -webkit-linear-gradient(top,$vert,$vert);
+    background-image: linear-gradient(180deg,$vert,$vert);
+    background-position: 0 0.98em;
+    background-size: 100% 27%;
+    background-repeat: no-repeat;
+    padding: 0.125em 0;
+    -webkit-transition: background-position 0.15s;
+    transition: background-position 0.15s;
+    text-transform: lowercase;
+  }
+
+  .current {
+    margin-top: 0.6rem;
+    color: $bleu;
+    text-transform: uppercase;
+    border-top: 0.125rem solid $bleu;
+    padding: 0.1rem 0;
+    margin: 0 0.3rem;
+    color: $violet;
+    border-bottom: 0.01rem solid $violet;
+  }
+
+  figure,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .chapeau,
+  p {
+    max-width: 86vw;
+    margin: auto;
+  }
+
+  h2 {
+    border-left: 0.6rem solid $violet;
+    margin: 1rem 0 2rem 1rem;
+    padding: 0 0 1rem 1rem;
+  }
+
+  figcaption {
+    background-color: $bleu;
+    color: $vert;
+    border-left: 0.6rem solid $vert;
+    margin: 0.8rem 1.5rem 1.2rem 1rem;
+    padding: 0.2rem;
+  }
+
+  .chapeau {
+    font-style: italic;
+    border-bottom: 0.1rem solid $bleu;
+    padding: 0 0 2rem;
+  }
+}
+
+.first-person {
+  .page-header {
+    .entry-title {
+      display: inline-flex;
+      background: $violet;
+      color: #fff;
+    }
+
+    .edited {
+      color: #fff;
+      background-image: -webkit-linear-gradient(top,$violet,$violet);
+      background-image: linear-gradient(180deg,$violet,$violet);
+      background-position: 0 0.98em;
+      background-size: 100% 27%;
+      background-repeat: no-repeat;
+      padding: 0.125em 0;
+      -webkit-transition: background-position 0.15s;
+      transition: background-position 0.15s;
+      text-transform: lowercase;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    svg {
+      width: 0.8rem;
+      fill: #fff;
+    }
+
+    .chrono {
+      position: absolute;
+      right: 5%;
+      color: #fff;
+    }
+
+    .card-img-overlay {
+      background-color: $violet-t;
+      padding: 0;
+    }
+
+    .fp-center {
+      text-align: center;
+      left: 0;
+      right: 0;
+      position: absolute;
+      bottom: 15%;
+    }
+  }
+
+  .chapeau {
+    border: none;
+  }
+}
+
+.video,
+.video .page-header {
+  background-color: $bleu;
+
+  .meta,
+  p {
+    color: #fff;
+  }
+}
+
+.persona {
+  .page-header {
+    .entry-title {
+      display: inline-flex;
+      color: #fff;
+    }
+    .avatar-container {
+      margin-right: .8rem;
+    }
+
+    .edited {
+      color: #fff;
+      background-image: -webkit-linear-gradient(top,$violet,$violet);
+      background-image: linear-gradient(180deg,$violet,$violet);
+      background-position: 0 0.98em;
+      background-size: 100% 27%;
+      background-repeat: no-repeat;
+      padding: 0.125em 0;
+      -webkit-transition: background-position 0.15s;
+      transition: background-position 0.15s;
+      text-transform: lowercase;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    svg {
+      width: 0.8rem;
+      fill: #fff;
+    }
+
+    .chrono {
+      position: absolute;
+      right: 5%;
+      color: #fff;
+    }
+
+    address {
+      color: #fff;
+    }
+
+    .metas {
+      position: absolute;
+      bottom: 3%;
+    }
+  }
+
+  .chapeau {
+    border: none;
+  }
+
+  .personnages-concernes {
+.fiche {
+  background-color: $bleu;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+    h2 {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    .h6 {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #fff;
+      padding: .3rem .8rem;
+      margin-bottom: 2rem;
+      background-color: $violet;
+      -moz-box-shadow: 0.4em 0.4em 0 0 $vert;
+      -webkit-box-shadow: 0.4em 0.4em 0 0 $vert;
+      -o-box-shadow: 0.4em 0.4em 0 0 $vert;
+      box-shadow: 0.4em 0.4em 0 0 $vert;
+    }
+    .pic-perso {
+      margin-top: 2rem;
+    }
+  }
+  .element-perso {
+    h2 {
+      margin: 0;
+      border: 0;
+      margin-left: 1.5rem;
+    }
+  }
+  }
+}
