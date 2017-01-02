@@ -11,7 +11,7 @@
           ?>
     <article <?php post_class('card'); ?>><a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>">
 			<figure>
-			<?php the_post_thumbnail('w1800', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+			<?php the_post_thumbnail('u-m', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
 		</figure>
   <div class="card-img-overlay">
 <div class="meta d-inline-flex">

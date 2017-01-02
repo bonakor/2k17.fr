@@ -1,21 +1,63 @@
-<section class="diapa">
-  <div id="carousel-diapa" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-diapa" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-diapa" data-slide-to="1"></li>
-    <li data-target="#carousel-diapa" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      Slide 1
-    </div>
-    <div class="carousel-item">
-      Slide 2
-    </div>
-    <div class="carousel-item">
-      Slide 3
-    </div>
-  </div>
+<?php
+
+$ids = get_field('articles_slider', false, false);
+
+$the_query = new WP_Query(array(
+'posts_per_page'	=> 3,
+'tag'                    => 'diapa',
+));
+if ($the_query->have_posts()) {      ?>
+  <section class="diapa">
+        <div id="carousel-diapa" class="carousel slide carousel-fade" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <?php
+              $count = count($the_query->posts);
+              for ($i=0; $i<$count; $i++) {
+                ?>
+                  <li id="#carousel-example-2" data-slide-to="<?php echo $i; ?>"<?php
+                      if ($i == 0) {
+                        ?> class="active"<?php
+                      }
+                    ?>></li>
+                <?php
+              }
+            ?>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="lisbox">
+            <?php
+              $count = 0;
+              while ($the_query->have_posts()) {
+                $the_query->the_post();
+                ?>
+                  <div class="carousel-item<?php
+                      if ($count == 0) {
+                        echo ' active';
+                      }
+                    ?>">
+                    <article <?php post_class(''); ?>>
+                      <?php if ( has_post_format( 'video' )) { ?>
+<figure><svg><?php get_template_part( 'assets/svg/inline', 'play_button.svg' ); ?></svg></figure>
+<?php }; ?>
+        <h1><?php the_title( $before = '', $after = '', $echo = true )?></h1>
+        <div><figure class="avatar-container">
+          <?php echo get_avatar( get_the_author_meta( 'ID' ), '35', '', '', array('class' => 'rounded-circle')); ?>
+      </figure><div class="author">
+        <address class="card-text byline vcard d-block"><?php the_author(); ?></address>
+      </div></div>
+      </article></div>
+                <?php
+                $count++;
+              }
+            ?>
+          </div><!-- end .carousel-inner -->
+
+      <?php
+      wp_reset_postdata();
+    }; // end if have posts
+
+  ?>
   <a class="left carousel-control" href="#carousel-diapa" role="button" data-slide="prev">
     <span class="icon-prev" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>

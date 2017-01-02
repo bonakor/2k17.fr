@@ -8,7 +8,7 @@ footer {
 
   .container {
     display: flex;
-    margin: 1rem auto;
+    margin: auto;
   }
 
   figure {
@@ -16,7 +16,9 @@ footer {
     height: auto;
     margin: 0.6rem .3rem 1rem 0;
   }
-
+img {
+  max-height: 2rem;
+}
   .footer-nav {
     display: flex;
     justify-content: flex-start;

@@ -28,7 +28,7 @@ use Roots\Sage\Wrapper;
       <section class="row related">
         <?php get_template_part( 'templates/related' ) ?>
       </section>
-      <section class="newsletter">
+      <section class="row newsletter">
         <?php get_template_part( 'templates/newsletter' ) ?>
       </section>
       <?php

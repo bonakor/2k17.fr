@@ -17,7 +17,7 @@ Pour ça, on accole au nom habituelle du field :
 
   if( !empty($image) ): ?>
 
-  	<img class="pic-perso" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+  	<img class="pic-perso img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
   </figure>
   <div class="h1eth2">
   <h1><?php the_field('prenom', $taxonomy . '_' . $term_id); ?></h1>

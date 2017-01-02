@@ -1,10 +1,10 @@
 <?php use Roots\Sage\Titles; ?>
 
 <header class="page-header card">    <figure>
-    <?php the_post_thumbnail('w1800', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+    <?php the_post_thumbnail('p-m', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
   </figure>
 <div class="card-img-overlay">
-<div class="meta d-inline-flex">
+<div class="meta">
 <?php get_template_part('templates/meta', 'edited'); ?>
 <figure class=timer><?php get_template_part( 'assets/svg/inline', 'timer.svg' ); ?></figure><span> <?php the_field('reading_time'); ?>'</span>
 </div>
