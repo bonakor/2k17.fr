@@ -1,8 +1,8 @@
-<header class="page-header card">
+<header class="page-header">
+  <div class="container-author">
   <figure class="avatar-container">
   <?php echo get_avatar( get_the_author_meta( 'ID' ), '800', '', '', array('class' => 'cover-archive-author')); ?>
   </figure>
-<div class="card-img-overlay image-une">
   <?php
    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
    ?>

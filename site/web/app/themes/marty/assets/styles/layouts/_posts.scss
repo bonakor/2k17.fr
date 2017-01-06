@@ -6,7 +6,6 @@
     margin: 0;
     border-radius: 0;
   }
-
   padding-bottom: 3rem;
 
   .type_article {
@@ -19,7 +18,7 @@
     border-top: 0.8rem solid $vert;
     background: $bleu;
     color: $vert;
-    max-width: 86%;
+    
     margin: auto;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -30,13 +29,21 @@
     }
   }
 
+  .entry-content {
+    margin: auto;
+  }
+
+  .entry-content-asset {
+    margin: 1.6em auto;
+  }
+
   .home span {
     color: $bleu;
   }
 
   .breadcrumbs {
     margin-top: 1rem;
-    max-width: 86vw;
+    max-width: $mw;
   }
 
   .breadcrumbs a {
@@ -91,8 +98,9 @@
   }
 
   .chapeau,
-  p, h2 {
-    max-width: 86vw;
+  h2,
+  p {
+    max-width: $mw;
     margin-left: auto;
     margin-right: auto;
   }
@@ -137,7 +145,7 @@
 
     .timer svg {
       height: 0.8rem;
-      margin-right: .6vw;
+      margin-right: 0.6vw;
     }
   }
 }
@@ -145,14 +153,14 @@
 .listicle {
   .page-header {
     background-color: $violet;
-padding: 3vh 0 3vh 7vw;
+    padding: 3vh 0 3vh 7vw;
   }
-  .chapeau {
-  border-bottom: .1rem solid $violet;
-  margin-bottom: 3rem;
-}
-}
 
+  .chapeau {
+    border-bottom: 0.1rem solid $violet;
+    margin-bottom: 3rem;
+  }
+}
 /* FIRST PERSON*/
 .first-person {
   .page-header {
@@ -204,34 +212,53 @@ padding: 3vh 0 3vh 7vw;
       right: 0;
       position: absolute;
       bottom: 15%;
-p {
-  margin-bottom: 2rem;
-}
+
+      p {
+        margin-bottom: 2rem;
+      }
+
       .author-info {
         margin-top: 2rem;
       }
     }
-.type_article {
-  padding: 0 .15rem;
-  font-size: 80%;
-  line-height: 1.2;
-  color: $bleu;
-}
-}
-    .chapeau {
-      border: none;
+
+    .type_article {
+      padding: 0 0.15rem;
+      font-size: 80%;
+      line-height: 1.2;
+      color: $bleu;
     }
   }
+
+  .chapeau {
+    border: none;
+  }
+}
 /* VIDEO */
 .video,
 .video .page-header {
   background-color: $bleu;
-
   .meta,
   p {
     color: #fff;
   }
 }
+.video .page-header {
+  max-width: $mw;
+  margin-left: auto;
+  margin-right: auto;
+
+  .meta {
+
+    margin-bottom: auto;
+    display: flex;
+    time {
+      margin-left: auto;
+      margin-right:2rem;
+    }
+  }
+}
+
 /* PERSONA*/
 .persona {
   .page-header {
@@ -241,8 +268,7 @@ p {
     }
 
     .avatar-container {
-      margin: auto .8rem auto 0;
-
+      margin: auto 0.8rem auto 0;
     }
 
     .edited {
@@ -267,15 +293,20 @@ p {
       fill: #fff;
     }
 
-    address, .chrono, .meta {
+    .chrono,
+    .meta,
+    address {
       color: #fff;
     }
-.meta {
-  display: flex;
-}
-.timer {
-  margin: .1rem 1vw 0 auto;
-}
+
+    .meta {
+      display: flex;
+    }
+
+    .timer {
+      margin: 0.1rem 1vw 0 auto;
+    }
+
     .metas {
       position: absolute;
       bottom: 3%;

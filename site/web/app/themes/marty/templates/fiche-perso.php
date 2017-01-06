@@ -12,7 +12,7 @@ $image = get_field('photo_persona', 'personas_' . $termid);
 
 if( !empty($image) ): ?>
 
-	<img class="pic-perso" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></div>
+	<figure><img class="pic-perso" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></figure></div>
 
 <?php endif; ?>
 <?php endif; ?>

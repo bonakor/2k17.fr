@@ -1,0 +1,141 @@
+@include media-breakpoint-up(lg) {
+  body {
+    font-size: 120%;
+  }
+
+  .entry-content {
+    max-width: 51em;
+  }
+
+  .entry-content-asset,
+  p {
+    max-width: $mwd !important;
+  }
+.error404 .e404 {
+  max-width: 50vw;
+  margin-top: 5rem;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}}
+.banner {
+  top: 0;
+bottom: calc(100vh - 3rem);
+}
+footer {
+  margin-bottom: 0;
+}
+  #mc_embed_signup,
+  .author-posts,
+  .category-posts,
+  .container-author,
+  .flexed,
+  .rebound {
+    max-width: $mwd;
+  }
+.author-posts {
+  margin-top: 3rem;
+}
+  .newsletter {
+    .button,
+    .email {
+      width: $mwd;
+    }
+  }
+
+  .container-author {
+    margin-left: auto;
+    margin-right: auto;
+
+    .metas {
+      left: 0 !important;
+    }
+  }
+.video {
+  background-color: #fff;
+  p {
+    color: $bleu;
+  }
+  .top-video {
+    display: flex;
+    padding: 5% 7% 0;
+    background: rgba(118,71,249,1);
+background: -moz-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(118,71,249,1)), color-stop(75%, rgba(118,71,249,1)), color-stop(75%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7647f9', endColorstr='#ffffff', GradientType=0 );
+    .page-header {
+      background-color: transparent;
+      padding-left: 5rem;
+      display: flex;
+    padding-left: 5rem;
+    flex-direction: column;
+    margin-bottom: 9rem;
+
+
+    h1 {
+      margin-bottom: auto;
+    }
+    .author-info {
+      margin-bottom: auto;
+    }
+    }
+  }
+
+}
+#panel {
+  margin-top: 3rem;
+}
+}
+  /* Effect 11: text fill based on Lea Verou's animation http://dabblet.com/gist/6046779 */
+/*  .breadcrumbs {
+    a {
+      position: relative;
+      display: inline-block;
+      margin: 15px 25px;
+      outline: none;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      text-shadow: 0 0 1px rgba(255,255,255,0.3);
+      font-size: 1.35em;
+    }
+
+    a:focus,
+    a:hover {
+      outline: none;
+    }
+
+    .cl-effect-11 a {
+      padding: 10px 0;
+      border-top: 2px solid #0972b4;
+      color: #0972b4;
+      text-shadow: none;
+    }
+
+    .cl-effect-11 a::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      padding: 10px 0;
+      max-width: 0;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      content: attr(data-hover);
+      -webkit-transition: max-width 0.5s;
+      -moz-transition: max-width 0.5s;
+      transition: max-width 0.5s;
+    }
+
+    .cl-effect-11 a:focus::before,
+    .cl-effect-11 a:hover::before {
+      max-width: 100%;
+    }
+  }*/
+}

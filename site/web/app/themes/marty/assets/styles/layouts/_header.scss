@@ -1,6 +1,11 @@
 
+.fixed-header {
+  position: fixed;
+width: 100%;
+backface-visibility: hidden;
+z-index: 2;
+}
 .banner {
-    position: fixed;
     bottom: 0;
     background-color: #fff;
     z-index: 999;
@@ -18,7 +23,7 @@ figure {
   svg {
     height: 2rem;
     width: 1.6rem;
-    fill: $violet;
+    fill: $bleu;
   }
   ul {
     display: inline;
@@ -29,9 +34,55 @@ figure {
     justify-content: flex-start;
   flex-direction: row;
   align-items: center;
+
   }
   .nav-link {
     min-width: 2.2rem;
     margin-left: .8rem;
+    color: $bleu;
   }
 }
+/* SLIDEOUT MENU*/
+.slideout-menu {
+       position: fixed;
+       left: 0;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       z-index: 0;
+       width: 256px;
+       overflow-y: scroll;
+       -webkit-overflow-scrolling: touch;
+       display: none;
+     }
+
+     .slideout-panel {
+       position: relative;
+       z-index: 1;
+       will-change: transform;
+     }
+
+     .slideout-open,
+     .slideout-open body,
+     .slideout-open .slideout-panel {
+       overflow: hidden;
+     }
+
+     .slideout-open .slideout-menu {
+       display: block;
+     }
+     .panel:before {
+       content: '';
+       display: block;
+       background-color: rgba(0,0,0,0);
+       transition: background-color 0.5s ease-in-out;
+     }
+
+     .panel-open:before {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: rgba(0,0,0,.5);
+       z-index: 99;
+     }

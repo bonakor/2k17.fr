@@ -3,7 +3,10 @@ body.home {
 }
 
 .home {
-section {  padding: 0 0 2.5rem 0;}
+  section {
+    padding: 0 0 2.5rem;
+  }
+
   .card {
     border: none;
     background: transparent;
@@ -246,6 +249,12 @@ section {  padding: 0 0 2.5rem 0;}
   }
 
   .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
     article {
       padding: 0 1em;
     }
@@ -294,6 +303,7 @@ section {  padding: 0 0 2.5rem 0;}
 
   .categoria {
     padding-bottom: 0;
+
     .carousel-item {
       height: 60vh;
       background-color: $vert;
@@ -317,6 +327,7 @@ section {  padding: 0 0 2.5rem 0;}
   flex-wrap: wrap;
   background-color: $violet;
   padding: 3.5rem 0;
+  flex-direction: column;
 
   .card {
     border: none;
@@ -371,6 +382,7 @@ section {  padding: 0 0 2.5rem 0;}
     -o-box-shadow: 0.5em 0.5em 0 -.25rem $vert;
     box-shadow: 0.5em 0.5em 0 -.25rem $vert;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=$vert, Direction=134, Strength=0);
+    margin-bottom: 0;
   }
 
   .card-img-overlay {
@@ -429,7 +441,7 @@ section {  padding: 0 0 2.5rem 0;}
   }
 
   .e404 {
-    max-width: 86vw;
+    max-width: $mw;
     margin: 2rem auto;
     color: $violet;
     text-align: center;
@@ -445,7 +457,7 @@ section {  padding: 0 0 2.5rem 0;}
 .author-posts,
 .category-posts,
 .rebound {
-  max-width: 86%;
+  max-width: $mw;
   margin: auto;
 
   a {
@@ -455,6 +467,7 @@ section {  padding: 0 0 2.5rem 0;}
   article {
     display: flex;
     max-width: 100%;
+    padding-bottom: 1.5rem;
   }
 
   .article-metas {
@@ -490,9 +503,13 @@ section {  padding: 0 0 2.5rem 0;}
 
   .image-une {
     max-width: 4rem;
-    -webkit-box-shadow: 0.2rem 0.2rem 0 1px $violet;
-    -moz-box-shadow: 0.2rem 0.2rem 0 1px $violet;
-    box-shadow: 0.2rem 0.2rem 0 1px $violet;
+    margin: auto;
+
+    img {
+      -webkit-box-shadow: 0.2rem 0.2rem 0 1px $violet;
+      -moz-box-shadow: 0.2rem 0.2rem 0 1px $violet;
+      box-shadow: 0.2rem 0.2rem 0 1px $violet;
+    }
   }
 }
 
@@ -522,12 +539,21 @@ section {  padding: 0 0 2.5rem 0;}
   color: #fff;
 
   .page-header {
-    .card-img-overlay {
-      display: flex;
+    background-color: $violet;
+  }
+
+  .container-author {
+    position: relative;
+
+    figure {
+      text-align: center;
     }
 
     .metas {
+      position: absolute;
       margin-top: auto;
+      bottom: 3%;
+      left: 7%;
     }
 
     a {
@@ -578,7 +604,7 @@ section {  padding: 0 0 2.5rem 0;}
   }
 
   .bio-longue {
-    max-width: 86vw;
+    max-width: $mw;
     margin: auto;
   }
 
@@ -629,6 +655,12 @@ section {  padding: 0 0 2.5rem 0;}
 }
 
 .category {
+  .category-list {
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+  }
+
   .page-header {
     .metas-top {
       display: flex;
@@ -650,6 +682,10 @@ section {  padding: 0 0 2.5rem 0;}
     }
   }
 
+  article {
+    margin-bottom: 1rem;
+  }
+
   .entry-title {
     color: $bleu;
   }
@@ -663,6 +699,7 @@ section {  padding: 0 0 2.5rem 0;}
   text-align: center;
   background-color: $vert;
   padding: 3.5rem 0;
+  flex-direction: column;
 
   .cta-mail {
     color: $violet;

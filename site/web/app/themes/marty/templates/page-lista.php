@@ -1,6 +1,6 @@
 <?php
   $postslist = get_posts( array(
-    'posts_per_page'         => '3',
+    'posts_per_page'         => '4',
   	'ignore_sticky_posts'    => true,
   	'offset'                 => '0',
   ) ); ?>

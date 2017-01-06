@@ -1,14 +1,9 @@
 footer {
   background-color: $bleu;
-  margin-bottom: 2.5rem;
-
+  display: flex;
+  margin: 0 auto 2.5em;
   a {
     color: #fff;
-  }
-
-  .container {
-    display: flex;
-    margin: auto;
   }
 
   figure {
@@ -29,4 +24,291 @@ img {
     margin-left: .8rem;
   }
 
+}
+/*
+Using FontAwesome for icons
+https://fortawesome.github.io/Font-Awesome/
+*/
+
+// =============================================
+// Color Settings
+// =============================================
+
+// Toggle Icon Colors
+$toggle : #fff;
+$toggle-contrast : $violet;
+
+// Network List Colors
+$network-list-background : $violet;
+$network-list-background-hover : $violet;
+$network-list-icon-color : #fff;
+
+// Network Colors
+$twitter: #00C3F3;
+$facebook: #2C609B;
+$googleplus: #EC3F25;
+
+
+// =============================================
+// Share button
+// =============================================
+
+// Share Button Wrapper
+.share-button {
+  position: fixed;
+  width: 2.5rem;
+  right: 5%;
+  bottom: 3rem;
+  z-index: 2;
+}
+
+// Toggle Button
+.toggle {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 10;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $toggle-contrast;
+  color: $toggle;
+  box-shadow: inset 0 0 0 1px $toggle;
+  transition: all 0.5s ease;
+
+  // Toggle Button Hover
+  &:hover {
+    box-shadow: inset 0 0 0 39px $toggle;
+    color: $toggle-contrast;
+  }
+
+  // Share Icon
+  &:after {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-family:'FontAwesome';
+    content: "\f1e0";
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    left: -2px; // To align the icon optically
+  }
+
+  // Hidden input to toggle state
+	&-input {
+		display: none;
+	}
+
+  // =============================================
+  // Open Toggle Button
+	&-input:checked + .toggle {
+    box-shadow: inset 0 0 0 39px $toggle;
+    color: #fff;
+
+    // Cross Icon Bars
+    &:after, &:before {
+      background-color: $toggle-contrast;
+      content: "";
+      height: 3px;
+      width: 1.5rem;
+      position: absolute;
+      top: 1.1rem;
+left: .5rem;
+    }
+
+    // Bar 1
+    &:after {
+      transform: rotate(45deg);
+      animation: bar1 0.5s forwards;
+
+    }
+
+    // Bar 2
+    &:before {
+      transform: rotate(-45deg);
+      animation: bar2 0.5s forwards;
+    }
+	}
+}
+
+
+// =============================================
+// Network List
+// =============================================
+
+.network-list {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 25px;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.43, 0.26, 0.37, 1.73);
+  transform-origin: 0% 50%;
+  transform: perspective(600px) rotateX(0) rotateY(90deg) rotateZ(0);
+
+  // List Item
+  li {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+  }
+
+
+  // Link
+  a {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    line-height: 2.5rem;
+    text-indent: 120%;
+    text-decoration: none;
+  }
+
+  &:hover a:before {
+    background-color: $network-list-background-hover;
+  }
+
+  // Network Icon
+  a:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-family:'FontAwesome';
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 2.5rem;
+    text-indent: 0;
+    color: $network-list-icon-color;
+    background-color: $network-list-background;
+    transition: all 0.25s ease-in-out;
+  }
+
+  // Twitter
+  .twitter {
+    a:before {
+      content: "\f099";
+    }
+    a:hover:before {
+      background-color: $twitter;
+    }
+  }
+
+  // Facebook
+  .facebook {
+    a:before {
+      content: "\f09a";
+    }
+    a:hover:before {
+      background-color: $facebook;
+    }
+  }
+
+  // google Plus
+  .googleplus {
+    a:before {
+      content: "\f0d5";
+    }
+    a:hover:before {
+      background-color: $googleplus;
+    }
+  }
+}
+
+// =============================================
+// Open Network List
+
+input:checked ~ .network-list {
+	left: -130px;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0) rotateY(0) rotateZ(0);
+}
+
+
+// =============================================
+// Keyframe Animations
+// =============================================
+
+@keyframes bar1 {
+	0% {
+    content: "\f1e0";
+    width: 46px;
+    height: 50px;
+    background-color: transparent;
+    transform: rotate(0deg) scale(1);
+    top: 0;
+    left: 0;
+    opacity: 1;
+	}
+
+	50% {
+    background-color: transparent;
+    content: "\f1e0";
+    width: 46px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+	}
+  50.001% {
+    background-color: #fff;
+    left: 10px;
+    top: 22px;
+    content: "";
+    height: 3px;
+    width: 30px;
+	}
+
+  60% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+
+}
+
+
+@keyframes bar2 {
+	0% {
+    background-color: transparent;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+	}
+
+	50% {
+    background-color: transparent;
+    transform: rotate(0deg) scale(0.2);
+    opacity: 0;
+	}
+
+  60% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
 }

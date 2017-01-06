@@ -8,7 +8,14 @@ Pour chaque field et répéteur, on doit préciser qu'il doit récupérer les in
 Pour ça, on accole au nom habituelle du field :
 , $taxonomy . '_' . $term_id
 */
- ?>
+$terms = get_terms( 'personas' );
+if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    echo '<ul class="category-list">';
+    foreach ( $terms as $term ) {
+        echo '<li>' . $term->name . '</li>';
+    }
+    echo '</ul>';
+} ?>
 <div class="basic-id">
   <figure>
     <?php

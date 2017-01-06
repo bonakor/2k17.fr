@@ -8,7 +8,7 @@ $the_query = new WP_Query(array(
 ));
 if ($the_query->have_posts()) {      ?>
   <section class="diapa">
-        <div id="carousel-diapa" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carousel-diapa" class="carousel slide carousel-fade" data-slideout-ignore data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <?php

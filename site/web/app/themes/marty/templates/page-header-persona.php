@@ -1,7 +1,8 @@
 <?php use Roots\Sage\Titles; ?>
 
 <header class="page-header card">    <figure>
-    <?php the_post_thumbnail('p-m', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+    <?php the_post_thumbnail('p-m', ['class' => 'card-img img-fluid hidden-lg-up', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+    <?php the_post_thumbnail('p-d', ['class' => 'card-img img-fluid hidden-md-down', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
   </figure>
 <div class="card-img-overlay">
 <div class="meta">

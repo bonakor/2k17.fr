@@ -1,6 +1,6 @@
 <h3 class="cta">Hey, pars pas !<br>
   Tu peux aussi matter ça.</h3>
-
+<div class="flexed">
   <?php
 
 $posts = get_field('articles_lies');
@@ -28,3 +28,4 @@ if( $posts ): ?>
 
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 <?php endif; ?>
+</div>

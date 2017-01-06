@@ -17,8 +17,8 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_header');
       get_template_part('templates/header');
-    ?>
-    <div class="wrap container" role="document">
+    ?><div class="panel" id="panel">
+    <div class="wrap container-fluid" role="document">
       <section class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
@@ -34,7 +34,7 @@ use Roots\Sage\Wrapper;
       <?php
 } else {
 
-}; ?>
+}; ?></div>
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
