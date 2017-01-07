@@ -110,7 +110,8 @@
     "bonakor/alm-preloaded": "^1.0",
     "bonakor/alm-cache": "^1.0",
     "bonakor/alm-repeaters": "^1.0",
-    "bonakor/alm-seo": "^1.0"
+    "bonakor/alm-seo": "^1.0",
+    "wpackagist-plugin/onesignal-free-web-push-notifications": "^1.13"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"

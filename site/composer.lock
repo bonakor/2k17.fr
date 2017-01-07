@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60c03f534c62954829631409c5b74d48",
-    "content-hash": "79aa06a277671737bf20ce7d2f36b842",
+    "hash": "fc7d3e8a188fa66e0a4cb34122570aaa",
+    "content-hash": "2d0ef24872dbd2f0ed6cdca07d103120",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -500,6 +500,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/onesignal-free-web-push-notifications",
+            "version": "1.13.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/onesignal-free-web-push-notifications/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/onesignal-free-web-push-notifications.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/onesignal-free-web-push-notifications/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
