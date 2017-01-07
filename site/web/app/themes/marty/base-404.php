@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div id="panel" class="wrap panel container" role="document">
+    <div id="panel" class="panel"><div class="wrap" role="document">
       <section class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
@@ -29,6 +29,6 @@ use Roots\Sage\Wrapper;
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
-    ?>
+    ?></div>
   </body>
 </html>
