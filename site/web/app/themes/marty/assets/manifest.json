@@ -17,11 +17,6 @@
         "scripts/customizer.js"
       ]
     },
-    "defer.js": {
-      "files": [
-        "scripts/defer.js"
-      ]
-    },
     "jquery.js": {
       "bower": ["jquery"]
     }
