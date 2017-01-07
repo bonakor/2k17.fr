@@ -6,12 +6,13 @@
   </figure>
 <div class="card-img-overlay">
 <div class="meta">
-<?php get_template_part('templates/meta', 'edited'); ?>
+  <time class="updated small card-text" datetime="<?php the_modified_time('Y/m/d G:i:s'); ?>" pubdate itemprop="datePublished"><?php the_time('j F'); ?></time><?php get_template_part('templates/meta', 'edited'); ?></a>
+    
 <figure class=timer><?php get_template_part( 'assets/svg/inline', 'timer.svg' ); ?></figure><span> <?php the_field('reading_time'); ?>'</span>
 </div>
 <div class="metas">
 <span class="type_article"><?php the_field('type_article'); ?></span><br>
 <h1 class="entry-title"><?= Titles\title(); ?></h1><br>
-  <?php get_template_part('templates/meta', 'author-date'); ?>
+  <?php get_template_part('templates/meta', 'coauthor'); ?>
 </div>
 </header>

@@ -58,7 +58,8 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/wp-user-avatar": "^2.0",
     "wpackagist-plugin/contact-form-7": "^4.6",
-    "wpackagist-plugin/wordpress-seo": "^4.0"
+    "wpackagist-plugin/wordpress-seo": "^4.0",
+    "wpackagist-plugin/ajax-load-more": "^2.13"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"

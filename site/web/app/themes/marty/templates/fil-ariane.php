@@ -1,7 +1,7 @@
 <?php
 if ( function_exists('yoast_breadcrumb') ) {
 yoast_breadcrumb('
-<p id="breadcrumbs"class="breadcrumbs">','</p>
+<p id="breadcrumbs"class="breadcrumbs small">','</p>
 ');
 }
 ?>

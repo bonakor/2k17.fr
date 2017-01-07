@@ -18,7 +18,7 @@
     border-top: 0.8rem solid $vert;
     background: $bleu;
     color: $vert;
-    
+
     margin: auto;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -67,6 +67,8 @@
     color: #fff;
     margin: auto;
     padding: 0 0.5rem;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
   }
 
   .edited {
@@ -123,6 +125,7 @@
   .chapeau {
     font-style: italic;
     padding: 0 0 1rem;
+    margin-top: 3rem;
   }
 }
 /*** TYPES DE POST */
@@ -154,21 +157,33 @@
   .page-header {
     background-color: $violet;
     padding: 3vh 0 3vh 7vw;
+    .meta {
+      margin-bottom: .8rem;
+    }
+    h1 {
+      margin: .8rem 0 1.5rem;
+    }
+    .avatar-nom {
+      margin-right: 1.3rem;
+    }
   }
 
   .chapeau {
-    border-bottom: 0.1rem solid $violet;
+    border-bottom: 0.08rem solid $violet;
     margin-bottom: 3rem;
+
   }
 }
 /* FIRST PERSON*/
 .first-person {
   .page-header {
     .entry-title {
-      display: inline;
-      background: $violet;
       color: #fff;
       margin-top: 1rem;
+      span {
+        background: $violet;
+    line-height: 1.3em;
+      }
     }
 
     .edited {
@@ -187,6 +202,9 @@
 
     figure {
       margin: 0;
+    }
+      .timer {
+      padding-right: .3rem;
     }
 
     svg {
@@ -220,6 +238,9 @@
       .author-info {
         margin-top: 2rem;
       }
+      time {
+        font-weight: bold;
+      }
     }
 
     .type_article {
@@ -242,6 +263,13 @@
   p {
     color: #fff;
   }
+  h1 {
+    margin: 2rem 0 1.5rem;
+    font-size: 175%;
+  }
+}
+.responsive-video {
+  margin-bottom: 1rem;
 }
 .video .page-header {
   max-width: $mw;
@@ -252,9 +280,14 @@
 
     margin-bottom: auto;
     display: flex;
+    .type_article {
+      color: $bleu;
+      font-size: 80%;
+    }
     time {
       margin-left: auto;
       margin-right:2rem;
+      font-weight: bold;
     }
   }
 }
@@ -322,17 +355,18 @@
       background-color: $bleu;
       color: #fff;
       text-align: center;
-      padding: 3rem 0;
+      padding: 3rem 0 0;
       margin-bottom: 2rem;
 
       h2 {
         border: none;
         padding: 0;
         margin: auto;
+        font-size: 180%;
       }
 
       .h6 {
-        margin-bottom: 1rem;
+        margin: .5rem auto 1.5rem;
       }
 
       a {
@@ -346,10 +380,10 @@
         box-shadow: 0.4em 0.4em 0 0 $vert;
         font-weight: bold;
       }
+.perso-pic {
+  margin-top: 5rem;
+}
 
-      .pic-perso {
-        margin-top: 2rem;
-      }
     }
 
     .element-perso {

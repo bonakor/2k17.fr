@@ -46,7 +46,6 @@ function setup() {
   add_image_size('fp-m', 1125, 2018, array( 'center', 'center' ));
   add_image_size('p-d', 1920, 625, array( 'center', 'center' ));
   add_image_size('u-d', 1920, 725, array( 'center', 'center' ));
-
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', ['video']);

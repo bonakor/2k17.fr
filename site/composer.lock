@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fa4674efa2de8ce55bd7cba2a1b205ca",
-    "content-hash": "8cf83b72b556f34b1729638d7cd43e01",
+    "hash": "d259abfff53f5f724acbfed0713b73f2",
+    "content-hash": "bd0d987a2a342927be9e192ee87d168e",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -396,6 +396,26 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "wpackagist-plugin/ajax-load-more",
+            "version": "2.13.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ajax-load-more/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ajax-load-more.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ajax-load-more/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",

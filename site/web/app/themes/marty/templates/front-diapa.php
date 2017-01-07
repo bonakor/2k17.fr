@@ -40,9 +40,9 @@ if ($the_query->have_posts()) {      ?>
                       <?php if ( has_post_format( 'video' )) { ?>
 <figure><svg><?php get_template_part( 'assets/svg/inline', 'play_button.svg' ); ?></svg></figure>
 <?php }; ?>
-        <h1><?php the_title( $before = '', $after = '', $echo = true )?></h1>
+        <h1 class="h4"><?php the_title( $before = '', $after = '', $echo = true )?></h1>
         <div><figure class="avatar-container">
-          <?php echo get_avatar( get_the_author_meta( 'ID' ), '35', '', '', array('class' => 'rounded-circle')); ?>
+          <?php echo get_avatar( get_the_author_meta( 'ID' ), '25', '', '', array('class' => 'rounded-circle')); ?>
       </figure><div class="author">
         <address class="card-text byline vcard d-block"><?php the_author(); ?></address>
       </div></div>
