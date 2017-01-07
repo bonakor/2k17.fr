@@ -51,7 +51,6 @@
     "johnpbloch/wordpress": "4.7",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/google-sitemap-generator": "^4.0",
     "roots/soil": "3.7.1",
     "wpackagist-plugin/co-authors-plus": "^3.2",
     "wpackagist-plugin/regenerate-thumbnails": "^2.2",
