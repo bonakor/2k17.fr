@@ -44,3 +44,5 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 
 });
+
+add_theme_support('soil-google-analytics', 'UA-89977365-1');

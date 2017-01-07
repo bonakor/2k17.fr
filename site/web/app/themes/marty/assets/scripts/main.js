@@ -20,100 +20,70 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-        (function(d) {
-          var config = {
-              kitId: 'qwl5oio',
-              scriptTimeout: 300,
-              async: false
-            },
-            h = d.documentElement,
-            t = setTimeout(function() {
-              h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-            }, config.scriptTimeout),
-            tk = d.createElement("script"),
-            f = false,
-            s = d.getElementsByTagName("script")[0],
-            a;
-          h.className += " wf-loading";
-          tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-          tk.async = true;
-          tk.onload = tk.onreadystatechange = function() {
-            a = this.readyState;
-            if (f || a && a != "complete" && a != "loaded") return;
-            f = true;
-            clearTimeout(t);
-            try {
-              Typekit.load(config)
-            } catch (e) {}
-          };
-          s.parentNode.insertBefore(tk, s)
-        })(document);
-        var slideout = new Slideout({
-             'panel': document.getElementById('panel'),
-             'menu': document.getElementById('menu'),
-             'padding': 256,
-             'tolerance': 70
-           });
-           var fixed = document.querySelector('.fixed-header');
+      /*DEFER LOADING*/
+      function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/app/themes/marty/dist/scripts/defer.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+
+/* SLIDEOUT MENU*/
+var slideout = new Slideout({
+     'panel': document.getElementById('panel'),
+     'menu': document.getElementById('menu'),
+     'padding': 256,
+     'tolerance': 70
+   });
+   var fixed = document.querySelector('.fixed-header');
 
 slideout.on('translate', function(translated) {
-  fixed.style.transform = 'translateX(' + translated + 'px)';
+fixed.style.transform = 'translateX(' + translated + 'px)';
 });
 
 slideout.on('beforeopen', function () {
-  fixed.style.transition = 'transform 300ms ease';
-  fixed.style.transform = 'translateX(256px)';
+fixed.style.transition = 'transform 300ms ease';
+fixed.style.transform = 'translateX(256px)';
 });
 
 slideout.on('beforeclose', function () {
-  fixed.style.transition = 'transform 300ms ease';
-  fixed.style.transform = 'translateX(0px)';
+fixed.style.transition = 'transform 300ms ease';
+fixed.style.transform = 'translateX(0px)';
 });
 
 slideout.on('open', function () {
-  fixed.style.transition = '';
+fixed.style.transition = '';
 });
 
 slideout.on('close', function () {
-  fixed.style.transition = '';
+fixed.style.transition = '';
 });
 
 
-           // Toggle button
-           document.querySelector('.toggle-button').addEventListener('click', function() {
-             slideout.toggle();
-           });
-           function close(eve) {
-  eve.preventDefault();
-  slideout.close();
+   // Toggle button
+   document.querySelector('.toggle-button').addEventListener('click', function() {
+     slideout.toggle();
+   });
+   function close(eve) {
+eve.preventDefault();
+slideout.close();
 }
 
 slideout
-  .on('beforeopen', function() {
-    this.panel.classList.add('panel-open');
-  })
-  .on('open', function() {
-    this.panel.addEventListener('click', close);
-  })
-  .on('beforeclose', function() {
-    this.panel.classList.remove('panel-open');
-    this.panel.removeEventListener('click', close);
-  });
-  window.fbAsyncInit = function() {
-FB.init({
-appId      : '431371877251584',
-xfbml      : true,
-version    : 'v2.8'
+.on('beforeopen', function() {
+this.panel.classList.add('panel-open');
+})
+.on('open', function() {
+this.panel.addEventListener('click', close);
+})
+.on('beforeclose', function() {
+this.panel.classList.remove('panel-open');
+this.panel.removeEventListener('click', close);
 });
-};
-
-(function(d, s, id){
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/fr_FR/sdk.js";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
