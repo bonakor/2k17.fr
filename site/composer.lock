@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e1b6fff954b5d60dc37e81a3256620fd",
-    "content-hash": "edfbf368313db1229d86935e79341768",
+    "hash": "60c03f534c62954829631409c5b74d48",
+    "content-hash": "79aa06a277671737bf20ce7d2f36b842",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -13,6 +13,50 @@
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzE4ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAxLTAzIDE3OjI1OjM0",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bonakor/alm-cache",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://candidatarien.com/wp-content/ajax-load-more-cache.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bonakor/alm-preloaded",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://candidatarien.com/wp-content/ajax-load-more-preloaded.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bonakor/alm-repeaters",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://candidatarien.com/wp-content/ajax-load-more-repeaters-v2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bonakor/alm-seo",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://candidatarien.com/wp-content/ajax-load-more-seo.zip",
                 "reference": null,
                 "shasum": null
             },

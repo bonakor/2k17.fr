@@ -34,12 +34,12 @@ use Roots\Sage\Wrapper;
       <?php
 } else {
 
-}; ?></div>
+}; ?>
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
-    ?>
+    ?></div>
   </body>
 </html>

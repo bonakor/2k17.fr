@@ -24,12 +24,12 @@ use Roots\Sage\Wrapper;
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         </div><!-- /.content -->
-      </div>
+
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
-    ?>
+    ?></div>
   </body>
 </html>

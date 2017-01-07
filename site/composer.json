@@ -42,6 +42,54 @@
       "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzE4ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAxLTAzIDE3OjI1OjM0"
     }
   }
+},
+{
+"type": "package",
+"package": {
+"name": "bonakor/alm-preloaded",
+"version": "1.0",
+"type": "wordpress-plugin",
+"dist": {
+  "type": "zip",
+  "url": "https://candidatarien.com/wp-content/ajax-load-more-preloaded.zip"
+}
+}
+},
+{
+"type": "package",
+"package": {
+"name": "bonakor/alm-cache",
+"version": "1.0",
+"type": "wordpress-plugin",
+"dist": {
+  "type": "zip",
+  "url": "https://candidatarien.com/wp-content/ajax-load-more-cache.zip"
+}
+}
+},
+{
+"type": "package",
+"package": {
+"name": "bonakor/alm-seo",
+"version": "1.0",
+"type": "wordpress-plugin",
+"dist": {
+  "type": "zip",
+  "url": "https://candidatarien.com/wp-content/ajax-load-more-seo.zip"
+}
+}
+},
+{
+"type": "package",
+"package": {
+"name": "bonakor/alm-repeaters",
+"version": "1.0",
+"type": "wordpress-plugin",
+"dist": {
+  "type": "zip",
+  "url": "https://candidatarien.com/wp-content/ajax-load-more-repeaters-v2.zip"
+}
+}
 }
   ],
   "require": {
@@ -58,7 +106,11 @@
     "wpackagist-plugin/wp-user-avatar": "^2.0",
     "wpackagist-plugin/contact-form-7": "^4.6",
     "wpackagist-plugin/wordpress-seo": "^4.0",
-    "wpackagist-plugin/ajax-load-more": "^2.13"
+    "wpackagist-plugin/ajax-load-more": "^2.13",
+    "bonakor/alm-preloaded": "^1.0",
+    "bonakor/alm-cache": "^1.0",
+    "bonakor/alm-repeaters": "^1.0",
+    "bonakor/alm-seo": "^1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
