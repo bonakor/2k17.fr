@@ -739,7 +739,9 @@ body.home {
   background-color: $vert;
   padding: 3.5rem 0;
   flex-direction: column;
-
+#mc_embed_signup input.email:focus {
+  border-color: $violet;
+}
   .cta-mail {
     color: $violet;
     font-weight: bold;
