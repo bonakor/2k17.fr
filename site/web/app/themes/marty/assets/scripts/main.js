@@ -21,17 +21,22 @@
       init: function() {
         // JavaScript to be fired on all pages
         /*SDK FB*/
-        $(window).load( function(){
-    (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s);
-         js.id = id;
-         js.onload = function() { fbAsyncInit(); }
-         js.src = "//connect.facebook.net/fr_FR/sdk.js"; 
-         fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-});
+        window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '431371877251584',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/fr_FR/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
         /* TYPEKIT */
         (function(d) {
         var config = {
