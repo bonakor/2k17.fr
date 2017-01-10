@@ -3,15 +3,16 @@
     font-size: 120%;
   }
 
-  .entry-content{
+  .entry-content {
     max-width: 51em;
   }
-.fp-edited-in {
-  width: 40.25em;
+
+  .fp-edited-in {
+    width: 40.25em;
     margin: auto;
     max-width: 100%;
+  }
 
-}
   .entry-content-asset,
   p {
     max-width: $mwd !important;
@@ -26,10 +27,16 @@
       margin-bottom: 2rem;
     }
   }
-  .h1, h1 {
+
+  .h1,
+  h1 {
     font-size: 300%;
     font-weight: bold;
+  }
 
+  .tax-personas .bio-longue {
+    max-width: $mwd;
+    margin: auto;
   }
 
   .banner {
@@ -87,7 +94,7 @@
       background: -o-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
       background: -ms-linear-gradient(top, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
       background: linear-gradient(to bottom, rgba(118,71,249,1) 0%, rgba(118,71,249,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#7647f9', endColorstr='#ffffff', GradientType=0 );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#7647f9', endColorstr='#ffffff', GradientType=0 );
 
       .page-header {
         background-color: transparent;
@@ -107,55 +114,82 @@
       }
     }
   }
-.banner .container {
-  max-width: 88vw;
-  .logo {
-position: fixed;
-left: 50%;
-transform: translateX(-50%);
+
+  .banner .container {
+    max-width: 88vw;
+
+    .logo {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
-}
+
   #panel {
     margin-top: 3rem;
   }
+
   .home {
     .una {
       .container-una {
         margin: auto;
-width: 80vw;
-padding: 0 1rem;
-h2 {
-  font-size: 300%;
-}
+        width: 80vw;
+        padding: 0 1rem;
 
+        h2 {
+          font-size: 300%;
+        }
       }
+
       .entry-title {
         margin: 1.8rem 0 2rem;
       }
     }
-    .quadra, .lista {
+
+    .lista,
+    .quadra {
       max-width: 80vw;
       margin: auto;
+
       h2 {
         font-size: 130%;
       }
     }
 
     .diapa {
-    .h4 {
-      font-size: 200%;
+      .h4 {
+        font-size: 200%;
+      }
+
+      address {
+        font-size: 120%;
+      }
     }
-    address {
+
+    .lista .article-metas {
       font-size: 120%;
     }
   }
+}
 
-  .lista .article-metas {
-    font-size: 120%;
-  }
-}
-}
 .single .post .breadcrumbs {
-  max-width: 86vw !important;
+  max-width: $mw !important;
   text-align: center;
+}
+
+.page-template-template-contact {
+  .contact-form, p {
+    max-width: $mw !important;
+    margin: auto;
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+    }
+input[type=submit] {
+  max-width: 15vw;
+float: right;
+}
+
+  }
 }
