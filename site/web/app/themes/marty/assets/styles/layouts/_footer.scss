@@ -46,7 +46,6 @@ $network-list-icon-color : #fff;
 // Network Colors
 $twitter: #00C3F3;
 $facebook: #2C609B;
-$googleplus: #EC3F25;
 
 
 // =============================================
@@ -223,12 +222,12 @@ left: .5rem;
   }
 
   // google Plus
-  .googleplus {
+  .copytoclipboard {
     a:before {
-      content: "\f0d5";
+      content: "\f0c1";
     }
     a:hover:before {
-      background-color: $googleplus;
+      background-color: $vert;
     }
   }
 }

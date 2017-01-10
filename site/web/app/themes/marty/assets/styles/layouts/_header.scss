@@ -30,7 +30,13 @@
       img {
         max-width: 2rem;
       }
+      :hover {
+        cursor: pointer;
 
+      svg {
+        fill: $violet;
+      }
+    }
       svg {
         height: 2rem;
         width: 1.6rem;
@@ -51,14 +57,21 @@
       min-height: 2.2rem;
       color: $bleu;
       margin-right: .5rem;
-
+:hover {
+  color: $violet;
+  cursor: pointer;
+}
       figure {
         text-align: center;
         margin: 0 auto;
+        :hover svg {
+          fill: $violet;
+        }
       }
 
       svg {
         width: 1rem;
+
       }
     }
   }

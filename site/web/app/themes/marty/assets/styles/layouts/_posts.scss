@@ -6,8 +6,11 @@
     margin: 0;
     border-radius: 0;
   }
+  .persona, .video, .listicle {
+    article {
   padding-bottom: 3rem;
-
+}
+}
   .type_article {
     background: $vert;
     font-style: italic;
@@ -44,16 +47,28 @@
   .breadcrumbs {
     margin-top: 1rem;
     max-width: $mw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2;
   }
 
   .breadcrumbs a {
     margin-top: 0.6rem;
     color: $bleu;
     text-transform: uppercase;
-    border-top: 0.125rem solid $bleu;
+    border-top: 0.0125rem solid $bleu;
     padding: 0.1rem 0;
     margin: 0 0.3rem;
   }
+.breadcrumb_last {
+  margin-top: 0.6rem;
+  color: $violet;
+ border-top: 0.0125rem solid $bleu;
+  border-bottom: 0.0125rem solid $violet;
+  text-transform: uppercase;
+  padding: 0.1rem 0;
+}
 
   .avatar-container {
     margin: 0;
@@ -254,7 +269,22 @@
   .chapeau {
     border: none;
   }
+  .fp-edited {
+    background-color: $bleu;
+    width: 100%;
+    color: #fff;
+    margin-top: 3rem;
+    padding: 2rem 7vw;
+    .avatar-container {margin: auto .8rem;}
+    .author {
+      margin: auto 0;
+    }
+    .edited-by {
+      font-size: 60%;
+    }
+  }
 }
+
 /* VIDEO */
 .video,
 .video .page-header {

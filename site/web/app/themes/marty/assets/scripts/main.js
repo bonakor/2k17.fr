@@ -98,6 +98,8 @@ this.panel.addEventListener('click', close);
 this.panel.classList.remove('panel-open');
 this.panel.removeEventListener('click', close);
 });
+/*copy to clipboard*/
+new Clipboard('.copylink');
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

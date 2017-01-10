@@ -1,7 +1,15 @@
 <header class="page-header">
   <div class="container-author">
   <figure class="avatar-container">
-  <?php echo get_avatar( get_the_author_meta( 'ID' ), '800', '', '', array('class' => 'cover-archive-author')); ?>
+    <?php
+
+    $image = get_field('image');
+
+    if( !empty($image) ): ?>
+
+    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+    <?php endif; ?>
   </figure>
   <?php
    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));

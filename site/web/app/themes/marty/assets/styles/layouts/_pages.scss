@@ -375,6 +375,18 @@ body.home {
   h2 {
     color: #fff;
   }
+  h2 {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+   height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+    margin: 0 auto;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
 
   .card-img-overlay {
     background: $violet-t;

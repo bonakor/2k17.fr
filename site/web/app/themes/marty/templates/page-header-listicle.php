@@ -6,7 +6,7 @@
     <div class="chrono">
   <figure class=timer><?php get_template_part( 'assets/svg/inline', 'timer.svg' ); ?></figure><span> <?php the_field('reading_time'); ?>'</span></div>
   </div>
-<time class="updated small card-text" datetime="<?php the_modified_time('Y/m/d G:i:s'); ?>" pubdate itemprop="datePublished"><?php the_time('j F'); ?></time><?php get_template_part('templates/meta', 'edited'); ?></a>
+<time title="modifié le <?php the_modified_time('d/m/Y G:i:s'); ?>" class="updated small card-text" datetime="<?php the_modified_time('Y/m/d G:i:s'); ?>" pubdate itemprop="datePublished"><?php the_time('j F'); ?></time><?php get_template_part('templates/meta', 'edited'); ?></a>
   <h1 class="entry-title"><?= Titles\title(); ?></h1>
   <?php get_template_part('templates/meta', 'coauthor'); ?>
 </header>
