@@ -10,8 +10,11 @@
 .d-inline-flex {
   display: inline-flex;
 }
-a:hover {
+a {
   cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
 }
 address {
   margin: auto;

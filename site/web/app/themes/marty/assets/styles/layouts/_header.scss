@@ -10,6 +10,10 @@
   background-color: #fff;
   z-index: 9;
   width: 100%;
+  a:hover {
+color: $violet !important;
+cursor: pointer;
+}
 
   .container {
     display: flex;
@@ -51,16 +55,14 @@
     .first {
       margin-left: auto;
     }
+
     .nav-link {
       min-width: 2.2rem;
       text-align: center;
       min-height: 2.2rem;
       color: $bleu;
       margin-right: .5rem;
-:hover {
-  color: $violet;
-  cursor: pointer;
-}
+
       figure {
         text-align: center;
         margin: 0 auto;

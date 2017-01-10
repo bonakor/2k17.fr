@@ -3,10 +3,15 @@
     font-size: 120%;
   }
 
-  .entry-content {
+  .entry-content{
     max-width: 51em;
   }
+.fp-edited-in {
+  width: 40.25em;
+    margin: auto;
+    max-width: 100%;
 
+}
   .entry-content-asset,
   p {
     max-width: $mwd !important;
@@ -20,6 +25,11 @@
       font-size: 2rem;
       margin-bottom: 2rem;
     }
+  }
+  .h1, h1 {
+    font-size: 300%;
+    font-weight: bold;
+
   }
 
   .banner {
@@ -114,6 +124,9 @@ transform: translateX(-50%);
         margin: auto;
 width: 80vw;
 padding: 0 1rem;
+h2 {
+  font-size: 300%;
+}
 
       }
       .entry-title {
@@ -123,6 +136,26 @@ padding: 0 1rem;
     .quadra, .lista {
       max-width: 80vw;
       margin: auto;
+      h2 {
+        font-size: 130%;
+      }
+    }
+
+    .diapa {
+    .h4 {
+      font-size: 200%;
+    }
+    address {
+      font-size: 120%;
     }
   }
+
+  .lista .article-metas {
+    font-size: 120%;
+  }
+}
+}
+.single .post .breadcrumbs {
+  max-width: 86vw !important;
+  text-align: center;
 }

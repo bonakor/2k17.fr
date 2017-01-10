@@ -19,7 +19,7 @@
 	<p class="type_article"><?php the_field('type_article'); ?></p>
 <figure class=timer><?php get_template_part( 'assets/svg/inline', 'timer.svg' ); ?></figure><span> <?php the_field('reading_time'); ?>'</span>
 </div>
-    <h2 class="card-title entry-title"><span><?php the_title( $before = '', $after = '', $echo = true )?></span></h2>
+    <h2 class="card-title h1 entry-title"><span><?php the_title( $before = '', $after = '', $echo = true )?></span></h2>
     <?php get_template_part('templates/meta', 'author-date'); ?>
   </div></div>
 </a></article>

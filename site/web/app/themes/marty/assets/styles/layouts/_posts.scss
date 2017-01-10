@@ -53,22 +53,57 @@
     line-height: 2;
   }
 
-  .breadcrumbs a {
-    margin-top: 0.6rem;
-    color: $bleu;
+  .breadcrumb_last, .breadcrumbs a {
+    margin: 0.6rem .3rem;
+  color: $bleu;
     text-transform: uppercase;
-    border-top: 0.0125rem solid $bleu;
-    padding: 0.1rem 0;
-    margin: 0 0.3rem;
+  /*  border-top: 0.0125rem solid $bleu;*/
+/*    padding: 0.1rem 0;*/
   }
-.breadcrumb_last {
-  margin-top: 0.6rem;
-  color: $violet;
- border-top: 0.0125rem solid $bleu;
-  border-bottom: 0.0125rem solid $violet;
-  text-transform: uppercase;
-  padding: 0.1rem 0;
+  .breadcrumbs a:hover {
+  /*    border-bottom: 0.0125rem solid $violet;*/
+    }
+
+  .breadcrumb_last, .breadcrumbs {
+    a{
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      transition: all .3s linear;
+    }
+
+    a:hover{
+      color: $violet;
+    }
+
+    a:before, a:after{
+      content: '';
+      background: $violet;
+      position: absolute;
+      width: 0;
+      height: 0.0125rem;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      transition: all .3s linear;
+    }
+
+    a:before{
+      top: 0;
+      left: 0;
+    }
+
+    a:after{
+      top: 100%;
+      right: 0;
+    }
+
+    a:hover:before, a:hover:after{
+      width: 100%;
 }
+}
+
 
   .avatar-container {
     margin: 0;
@@ -279,6 +314,10 @@
     .author {
       margin: auto 0;
     }
+    .fp-edited-in {
+      display: flex;
+      flex-direction: row;
+    }
     .edited-by {
       font-size: 60%;
     }
@@ -321,6 +360,9 @@
     }
   }
 }
+.video .breadcrumbs a, .video .breadcrumb_last {
+    color: #fff !important;
+  }
 
 /* PERSONA*/
 .persona {
