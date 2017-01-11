@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "277542359cb0c5c35a5d7ef40be9e4b6",
-    "content-hash": "9a5dca9b3ab396ac92090ac8ac623f32",
+    "hash": "e979c809d4ff7dfb36b133c1a5bb72fe",
+    "content-hash": "e05645649f9ded1a667efced098bec59",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -500,6 +500,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/fb-instant-articles",
+            "version": "3.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fb-instant-articles/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fb-instant-articles/"
         },
         {
             "name": "wpackagist-plugin/onesignal-free-web-push-notifications",
