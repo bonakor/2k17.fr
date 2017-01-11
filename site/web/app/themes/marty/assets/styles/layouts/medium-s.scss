@@ -8,7 +8,7 @@
   }
 
   .fp-edited-in {
-    width: 40.25em;
+    width: 43.25em;
     margin: auto;
     max-width: 100%;
   }
@@ -33,20 +33,16 @@
     font-size: 300%;
     font-weight: bold;
   }
-
+    .entry-title {
+    max-width: $mwd;
+    margin: auto;
+  }
   .tax-personas .bio-longue {
     max-width: $mwd;
     margin: auto;
   }
 
-  .banner {
-    top: 0;
-    bottom: calc(100vh - 3rem);
-  }
 
-  footer {
-    margin-bottom: 0;
-  }
 
   #mc_embed_signup,
   .author-posts,
@@ -124,10 +120,10 @@
       transform: translateX(-50%);
     }
   }
-
+/*
   #panel {
-    margin-top: 3rem;
-  }
+    padding-top: 3rem;
+  }*/
 
   .home {
     .una {

@@ -100,6 +100,35 @@ this.panel.removeEventListener('click', close);
 });
 /*copy to clipboard*/
 new Clipboard('.copylink');
+/*COOKIE CONSENT*/
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#7647f9",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#3bffbe",
+      "text": "#140a23"
+    }
+  },
+  "theme": "edgeless",
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "2K17 utilise des cookies pour personnaliser ton expérience.",
+    "dismiss": "OK !",
+    "link": "En savoir plus",
+    "href": "/mentions-legales/"
+  }
+});
+/*cookie consent with navbar*/
+function pushDown(height) {
+  var navbar = document.getElementsByClassName(".banner .container")[0];
+  navbar.style.transition = 'all 1s';
+  navbar.style.marginTop = height+'px';
+}
+/*END*/
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
