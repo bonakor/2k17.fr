@@ -1,5 +1,5 @@
 <?php get_template_part('templates/fil-ariane'); ?>
-<div class="chapeau"><p><?php the_field('chapeau')?></p></div>
+<div class="chapeau op-kicker"><p><?php the_field('chapeau')?></p></div>
 <div class="entry-content"><?php the_content(); ?>
   <div class="personnages-concernes"><?php
 

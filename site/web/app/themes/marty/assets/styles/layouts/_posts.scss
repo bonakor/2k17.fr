@@ -430,7 +430,11 @@
       text-align: center;
       padding: 3rem 0 0;
       margin-bottom: 2rem;
-
+figcaption {
+  border: none;
+  background: none;
+  color: #fff;
+}
       h2 {
         border: none;
         padding: 0;
