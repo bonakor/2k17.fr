@@ -575,6 +575,10 @@ body.home {
       margin: 0 7vw 3rem;
       p {
       color: #fff;
+      margin: 0;
+    }
+    figure {
+      margin: auto;
     }
       figure > svg {
         height: 1.5rem;
@@ -585,7 +589,9 @@ body.home {
       }
     }
   }
-
+.contact-form p {
+  margin-top: 2rem;
+}
 
   input[type="email"],
   input[type="text"],
