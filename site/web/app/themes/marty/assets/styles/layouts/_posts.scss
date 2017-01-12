@@ -429,7 +429,9 @@
       color: #fff;
       text-align: center;
       padding: 3rem 0 0;
-      margin-bottom: 2rem;
+      margin: 0 auto 2rem;
+      display: flex;
+      flex-direction: column;
 figcaption {
   border: none;
   background: none;
@@ -447,6 +449,7 @@ figcaption {
       }
 
       a {
+            margin: auto;
         color: #fff;
         padding: 0.3rem 0.8rem;
         margin-bottom: 2rem;

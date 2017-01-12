@@ -13,7 +13,6 @@ $thumb = $image['sizes'][ $size ];
 	$height = $image['sizes'][ $size . '-height' ]; ?>
 
 <img class="hidden-md-down img-fluid card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
-    <?php the_post_thumbnail('p-d', ['class' => 'card-img img-fluid hidden-md-down', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
   </figure>
 <div class="card-img-overlay">
 <div class="meta">
