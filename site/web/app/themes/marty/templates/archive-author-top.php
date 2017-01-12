@@ -3,7 +3,7 @@
   <figure class="avatar-container">
     <?php
 
-    $image = get_field('image');
+    $image = get_field('image_page_auteur');
 
     if( !empty($image) ): ?>
 
