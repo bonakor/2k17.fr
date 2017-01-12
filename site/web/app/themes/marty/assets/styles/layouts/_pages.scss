@@ -649,7 +649,9 @@ padding: .2rem .5rem;
     figure {
       text-align: center;
     }
-
+h2  {
+  font-size: 120%;
+}
     .metas {
       position: absolute;
       margin-top: auto;
@@ -663,6 +665,7 @@ padding: .2rem .5rem;
   }
 
   .author-posts {
+    margin-top: 2rem;
     > h2 {
       background-image: -webkit-linear-gradient(top,$vert,$vert);
       background-image: linear-gradient(180deg,$vert,$vert);
