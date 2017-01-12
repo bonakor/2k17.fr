@@ -3,13 +3,16 @@
   <figure class="avatar-container">
     <?php
 
-    $image = get_field('image_page_auteur');
+$image = get_field('image_page_auteur');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
-    if( !empty($image) ): ?>
+if( $image ) {
 
-    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	echo wp_get_attachment_image( $image, $size );
 
-    <?php endif; ?>
+}
+
+?>
   </figure>
   <?php
    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
