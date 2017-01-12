@@ -75,7 +75,7 @@ body.home {
     }
 
     .avatar-container {
-      margin: auto 0.8rem auto auto;
+      margin: auto 0.8rem auto;
     }
   }
 
@@ -338,12 +338,14 @@ body.home {
     .carousel-item {
     /*  height: 60vh;*/
       background-color: $vert;
+      padding-bottom: 3rem;
       figure {
         text-align: center;
         margin: auto;
         img {
           text-align: center;
           margin: auto;
+          max-height: 30vh;
         }
       }
     }

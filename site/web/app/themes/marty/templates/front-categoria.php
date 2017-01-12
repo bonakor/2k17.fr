@@ -13,8 +13,8 @@
       <a href="/rubriques/pour-avoir-ta-voix/"><figure><img class="img-fluid wp-image-174" src="https://2k17.fr/app/uploads/2017/01/Pipo-boucle.gif" alt=""/></figure></a>
     </div>
     <div class="carousel-item">
-        <a href="/dans-trois-mois-on-nen-parle-plus/"><h2>Dans trois mois, on n'en parle plus</h2></a>
-      <a href="/dans-trois-mois-on-nen-parle-plus/"><figure><img class="img-fluid wp-image-177" src="https://2k17.fr/app/uploads/2017/01/BLA_boucle.gif" alt=""/></figure></a>
+        <a href="/rubriques/dans-trois-mois-on-nen-parle-plus/"><h2>Dans trois mois, on n'en parle plus</h2></a>
+      <a href="/rubriques/dans-trois-mois-on-nen-parle-plus/"><figure><img class="img-fluid wp-image-177" src="https://2k17.fr/app/uploads/2017/01/BLA_boucle.gif" alt=""/></figure></a>
     </div>
     <div class="carousel-item">
         <a href="/rubriques/ce-que-ca-changera/"><h2>Ce que ça changera</h2></a>
