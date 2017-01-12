@@ -1,5 +1,5 @@
 <h3 class="cta">Hey, pars pas !<br>
-  Tu peux aussi matter ça.</h3>
+  Tu peux aussi mater ça.</h3>
 <div class="flexed">
   <?php
 
