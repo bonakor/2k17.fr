@@ -38,7 +38,7 @@ function setup() {
   add_image_size('w800', 800, 800, array( 'center', 'center' ));
   add_image_size('w1820', 1820, 2485, array( 'right', 'top' ));
   add_image_size('w1800', 1800, 2250, array( 'center', 'center' ));
-  add_image_size('w2010', 1340, 820, array( 'center', 'center' ));
+  add_image_size('w2010', 2010, 1230, array( 'center', 'center' ));
   add_image_size('h2036', 1500, 2036, array( 'center', 'center' ));
   add_image_size('h2668', 1500, 2668, array( 'center', 'center' ));
   add_image_size('u-m', 1500, 1200, array( 'center', 'center' ));
