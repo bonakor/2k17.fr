@@ -1,4 +1,4 @@
-<?php //Ici, on récupère les infos de la taxonomie affichée
+<?/*<?php //Ici, on récupère les infos de la taxonomie affichée
 // on définit les variables
 $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
@@ -7,7 +7,7 @@ $term_id = $queried_object->term_id;
 Pour chaque field et répéteur, on doit préciser qu'il doit récupérer les informations de la taxonomie affichée.
 Pour ça, on accole au nom habituelle du field :
 , $taxonomy . '_' . $term_id
-*/
+
 $terms = get_terms( 'personas' );
 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
     echo '<ul class="category-list">';
@@ -15,7 +15,7 @@ if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
         echo '<li>' . $term->name . '</li>';
     }
     echo '</ul>';
-} ?>
+}*/ ?>
 <div class="basic-id">
   <figure>
     <?php

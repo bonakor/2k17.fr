@@ -31,5 +31,12 @@
 </div>
 </header>
 <nav id="menu">
-<h2>Menu</h2>
+  <figure class="logo">
+  <a href="/" rel="home"><img src="<?= get_template_directory_uri() . '/assets/images/2k17_logo.png'; ?>" class="img-fluid" title='logo 2K17' alt='logo 2K17'></a>
+  </figure>
+  <a href="/rubriques/pour-mieux-comprendre/">Pour mieux comprendre</a>
+  <a href="/dans-trois-mois-on-nen-parle-plus/">Dans trois mois, on n'en parle plus</a>
+  <a href="/rubriques/ce-que-ca-changera/">Ce que ça changera</a>
+  <a href="/rubriques/des-promesses-a-ne-pas-oublier/">Des promesses à ne pas oublier</a>
+  <a href="/rubriques/pour-avoir-ta-voix/">Tout ça pour avoir ta voix</a>
 </nav>

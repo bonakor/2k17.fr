@@ -2,6 +2,17 @@
 
 <header class="page-header card">    <figure>
     <?php the_post_thumbnail('p-m', ['class' => 'card-img img-fluid hidden-lg-up', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+    <?php
+
+$image = get_field('featured_desktop');
+$title = $image['title'];
+	$alt = $image['alt'];
+$size = 'p-d'; // (thumbnail, medium, large, full or custom size)
+$thumb = $image['sizes'][ $size ];
+	$width = $image['sizes'][ $size . '-width' ];
+	$height = $image['sizes'][ $size . '-height' ]; ?>
+
+<img class="hidden-md-down img-fluid card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
     <?php the_post_thumbnail('p-d', ['class' => 'card-img img-fluid hidden-md-down', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
   </figure>
 <div class="card-img-overlay">
