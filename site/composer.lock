@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "465dcea575c3938fd4efa5c80b9def9d",
-    "content-hash": "e24750e60a40ff786e6fdafa6adb6963",
+    "hash": "5b7c1bde545842b63d345502f9e9407f",
+    "content-hash": "ee82c1a6c3781e2890ac9c7c59989899",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -580,6 +580,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+        },
+        {
+            "name": "wpackagist-plugin/slack",
+            "version": "0.5.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/slack/",
+                "reference": "tags/0.5.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/slack.0.5.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/slack/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

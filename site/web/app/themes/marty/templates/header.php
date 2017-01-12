@@ -9,7 +9,7 @@
   <span class="sr-only">Notre page Facebook</span>
 </a>
 <a class="nav-link" href="https://www.messenger.com/t/2k17officiel/"><figure><svg><?php get_template_part( 'assets/svg/inline', 'facebook-messenger.svg' ); ?></svg></figure><span class="sr-only">Hermione, notre bot messenger</span></a>
-<a class="nav-link" href="https://twitter.com/2k17_official">
+<a class="nav-link" href="https://twitter.com/2k17officiel">
   <i class="fa fa-twitter" aria-hidden="true"></i>
   <span class="sr-only">Notre Twitter</span>
 </a>
@@ -25,7 +25,7 @@
 <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo esc_url( get_the_permalink() ); ?>" class="facebook" target="_blank">Share on Facebook</a>
     </li>
     <li class="copytoclipboard">
-      <a data-clipboard-text="<?php the_permalink(); ?>" title="Copier le lien de l'article" class="copylink" href="#">Share on Google+</a>
+      <a data-clipboard-text="https://2k17.fr/<?php the_permalink(); ?>" title="Copier le lien de l'article" class="copylink" href="#">Share on Google+</a>
     </li>
   </ul>
 </div>
