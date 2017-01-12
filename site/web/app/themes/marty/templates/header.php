@@ -25,7 +25,7 @@
 <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo esc_url( get_the_permalink() ); ?>" class="facebook" target="_blank">Share on Facebook</a>
     </li>
     <li class="copytoclipboard">
-      <a data-clipboard-text="https://2k17.fr/<?php the_permalink(); ?>" title="Copier le lien de l'article" class="copylink" href="#">Share on Google+</a>
+      <a data-clipboard-text="https://2k17.fr<?php the_permalink(); ?>" title="Copier le lien de l'article" class="copylink" href="#">Share on Google+</a>
     </li>
   </ul>
 </div>
