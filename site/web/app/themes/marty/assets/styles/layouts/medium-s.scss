@@ -18,9 +18,14 @@
     max-width: $mwd !important;
   }
 .category {
-  .metas-top figure {
+  .metas-top {
+    figure {
     margin: auto;
 text-align: center;
+max-width: 20vw;
+  }
+  h1 {
+    font-size: 150%;
   }
 }
   .error404 .e404 {
