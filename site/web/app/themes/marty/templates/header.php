@@ -8,7 +8,7 @@
   <i class="fa fa-facebook" aria-hidden="true"></i>
   <span class="sr-only">Notre page Facebook</span>
 </a>
-<a class="nav-link" href="https://www.facebook.com/2K17officiel/?fref=ts"><figure><svg><?php get_template_part( 'assets/svg/inline', 'facebook-messenger.svg' ); ?></svg></figure><span class="sr-only">Hermione, notre bot messenger</span></a>
+<a class="nav-link" href="https://www.messenger.com/t/2k17officiel/"><figure><svg><?php get_template_part( 'assets/svg/inline', 'facebook-messenger.svg' ); ?></svg></figure><span class="sr-only">Hermione, notre bot messenger</span></a>
 <a class="nav-link" href="https://twitter.com/2k17_official">
   <i class="fa fa-twitter" aria-hidden="true"></i>
   <span class="sr-only">Notre Twitter</span>

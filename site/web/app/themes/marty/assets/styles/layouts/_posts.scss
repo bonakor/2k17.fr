@@ -452,7 +452,6 @@ figcaption {
             margin: auto;
         color: #fff;
         padding: 0.3rem 0.8rem;
-        margin-bottom: 2rem;
         background-color: $violet;
         -moz-box-shadow: 0.4em 0.4em 0 0 $vert;
         -webkit-box-shadow: 0.4em 0.4em 0 0 $vert;
@@ -461,7 +460,7 @@ figcaption {
         font-weight: bold;
       }
 .perso-pic {
-  margin-top: 5rem;
+      margin: 5rem auto 0;
 }
 
     }

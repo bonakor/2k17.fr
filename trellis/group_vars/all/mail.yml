@@ -1,6 +1,6 @@
 # Documentation: https://roots.io/trellis/docs/mail/
 mail_smtp_server: mail.gandi.net:587
 mail_admin: sebastien@2k17.fr
-mail_hostname: 2k17.fr
+mail_hostname: mail.gandi.net
 mail_user: sebastien@2k17.fr
 mail_password: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml

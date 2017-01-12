@@ -112,7 +112,8 @@
     "bonakor/alm-repeaters": "^1.0",
     "bonakor/alm-seo": "^1.0",
     "wpackagist-plugin/onesignal-free-web-push-notifications": "^1.13",
-    "wpackagist-plugin/fb-instant-articles": "^3.3"
+    "wpackagist-plugin/fb-instant-articles": "^3.3",
+    "wpackagist-plugin/google-sitemap-generator": "^4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"

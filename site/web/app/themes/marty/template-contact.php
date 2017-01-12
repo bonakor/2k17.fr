@@ -29,6 +29,7 @@ Template Post Type: page
       </div>
     </section>
 <section class="contact-form">
-<?php echo do_shortcode( '[contact-form-7 id="22" title="Formulaire de contact 1"]' ); ?>
+<? /*php echo do_shortcode( '[contact-form-7 id="22" title="Formulaire de contact 1"]' );*/ ?>
+Tu peux nous écrire à sebastien@2k17.fr
 </section>
 <?php endwhile; ?>
