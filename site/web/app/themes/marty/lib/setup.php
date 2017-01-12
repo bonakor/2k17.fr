@@ -36,11 +36,11 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
   add_image_size('w800', 800, 800, array( 'center', 'center' ));
-  add_image_size('w1820', 1820, 2485, array( 'right', 'top' ));
-  add_image_size('w1800', 1800, 2250, array( 'center', 'center' ));
+  add_image_size('w1820', 910, 1250, array( 'center', 'center' ));
+  add_image_size('w1800', 900, 1125, array( 'center', 'center' ));
   add_image_size('w2010', 2010, 1230, array( 'center', 'center' ));
-  add_image_size('h2036', 1500, 2036, array( 'center', 'center' ));
-  add_image_size('h2668', 1500, 2668, array( 'center', 'center' ));
+  add_image_size('h2036', 750, 1018, array( 'center', 'center' ));
+  add_image_size('h2668', 750, 1334, array( 'center', 'center' ));
   add_image_size('u-m', 1500, 1200, array( 'center', 'center' ));
   add_image_size('p-m', 1125, 1575, array( 'center', 'center' ));
   add_image_size('fp-m', 1125, 2018, array( 'center', 'center' ));
