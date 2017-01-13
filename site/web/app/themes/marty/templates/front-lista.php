@@ -23,7 +23,7 @@
     	$width = $image['sizes'][ $size . '-width' ];
     	$height = $image['sizes'][ $size . '-height' ]; ?>
 
-    <img class="hidden-md-down img-fluid card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
+    <img class="img-fluid card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
      </figure>
      <div class="card-img-overlay">
        <div class="article-metas">
