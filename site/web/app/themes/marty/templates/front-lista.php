@@ -13,7 +13,17 @@
     <article class='col-md-6'><a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>">
       <div class="card">
       <figure class="image-une">
-      <?php the_post_thumbnail('w2010', ['class' => 'card-img img-fluid', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+        <?php
+
+    $image = get_field('featured_desktop');
+    $title = $image['title'];
+    	$alt = $image['alt'];
+    $size = 'w2010'; // (thumbnail, medium, large, full or custom size)
+    $thumb = $image['sizes'][ $size ];
+    	$width = $image['sizes'][ $size . '-width' ];
+    	$height = $image['sizes'][ $size . '-height' ]; ?>
+
+    <img class="hidden-md-down img-fluid card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
      </figure>
      <div class="card-img-overlay">
        <div class="article-metas">
