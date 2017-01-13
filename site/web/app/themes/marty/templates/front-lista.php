@@ -15,7 +15,7 @@
       <figure class="image-une">
         <?php
 
-    $image = get_field('featured_desktop');
+    $image = get_field('featured_archive');
     $title = $image['title'];
     	$alt = $image['alt'];
     $size = 'w2010'; // (thumbnail, medium, large, full or custom size)

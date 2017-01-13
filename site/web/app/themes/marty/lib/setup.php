@@ -40,9 +40,9 @@ function setup() {
 /*  add_image_size('w1800', 900, 1125, array( 'center', 'center' ));*/
   add_image_size('w2010', 1340, 820, array( 'center', 'center' ));
   add_image_size('h2036', 750, 1018, array( 'center', 'center' ));
-  add_image_size('u-m', 1500, 1200, array( 'center', 'center' ));
-  add_image_size('p-m', 1125, 1575, array( 'center', 'center' ));
-  add_image_size('fp-m', 1125, 2018, array( 'center', 'center' ));
+  add_image_size('u-m', 750, 600, array( 'center', 'center' ));
+  add_image_size('p-m', 750, 1050, array( 'center', 'center' ));
+  add_image_size('fp-m', 750, 1346, array( 'center', 'center' ));
   add_image_size('p-d', 1920, 625, array( 'center', 'center' ));
   add_image_size('u-d', 1920, 725, array( 'center', 'center' ));
     add_image_size('fp-d', 1920, 1080, array( 'center', 'center' ));

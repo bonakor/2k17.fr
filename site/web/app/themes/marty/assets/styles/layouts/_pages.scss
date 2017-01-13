@@ -288,6 +288,7 @@ body.home {
 
     article {
       padding: 0 1em;
+      margin: 1rem auto;
     }
 
     .image-une {
@@ -646,7 +647,7 @@ padding: .2rem .5rem;
 .archive.author {
   background-color: $bleu;
   color: #fff;
-
+.panel {background-color: $bleu;}
   .page-header {
     background-color: $violet;
   }
