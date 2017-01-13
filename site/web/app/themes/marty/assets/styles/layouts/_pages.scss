@@ -7,7 +7,9 @@ body.home {
     max-width: 100%;
     margin: auto;
   }
-
+.panel {
+  background-color: $bleu;
+}
   section {
     padding: 0 0 2.5rem;
   }
@@ -575,6 +577,9 @@ body.home {
 
 .page-template-template-contact {
   background: $bleu;
+  .panel {
+    background-color: $bleu;
+  }
 
   .contact-top {
     background-color: $violet;
