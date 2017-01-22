@@ -12,7 +12,17 @@
     <article <?php post_class('card'); ?>><a href="<?php the_permalink(); ?>" rel="<?php the_title(); ?>">
 			<figure>
 			<?php the_post_thumbnail('u-m', ['class' => 'card-img img-fluid hidden-lg-up', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
-      <?php the_post_thumbnail('u-d', ['class' => 'card-img img-fluid hidden-md-down', 'title' => get_the_title(), 'alt' => get_the_title()]); ?>
+      <?php
+
+    $image = get_field('featured_archive');
+    $title = $image['title'];
+      $alt = $image['alt'];
+    $size = 'u-d'; // (thumbnail, medium, large, full or custom size)
+    $thumb = $image['sizes'][ $size ];
+      $width = $image['sizes'][ $size . '-width' ];
+      $height = $image['sizes'][ $size . '-height' ]; ?>
+
+    <img class="img-fluid hidden-md-down card-img" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>"/>
 		</figure>
   <div class="card-img-overlay"><div class="container-una">
 <div class="meta d-inline-flex">

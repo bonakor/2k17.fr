@@ -3,7 +3,7 @@
     font-size: 120%;
   }
 
-  .entry-content {
+  .entry-content, h2, figcaption,   {
     max-width: 51em;
   }
 
@@ -201,6 +201,14 @@ input[type=submit] {
 float: right;
 }
 
+  }
+}
+.persona {
+  .page-header {
+    .card-img-overlay {
+      max-width: 51em;
+      margin: auto;
+    }
   }
 }
 .persona .personnages-concernes .fiche .perso-pic {
