@@ -3,10 +3,15 @@
     font-size: 120%;
   }
 
-  .entry-content, .single .post h2, .single .post figcaption,   {
+  .entry-content, .single .post figcaption,   {
     max-width: 51em;
   }
-
+.single .post figcaption {
+  margin: auto;
+}
+.single .post h2 {
+      margin: 4rem auto 2rem auto;
+}
   .fp-edited-in {
     width: 43.25em;
     margin: auto;

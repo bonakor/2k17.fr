@@ -1,6 +1,6 @@
 <?php get_template_part('templates/fil-ariane'); ?>
 <div class="chapeau op-kicker"><p><?php the_field('chapeau')?></p></div>
-<div clas="entry-content"><?php the_content(); ?></div>
+<div class="entry-content"><?php the_content(); ?></div>
 <?php
 	$person = get_field('edite_par');
   $person_name = $person['display_name'];

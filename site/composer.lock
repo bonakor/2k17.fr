@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b0a8de2a6dbf0775b839b36e005539c3",
-    "content-hash": "47af6b02297dcc1dcb26c0578b0484fa",
+    "hash": "0159ea03d2cf6b870829dcc9a63276c9",
+    "content-hash": "2d2eca5c7573144800a1c95bf98792a4",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -53,7 +53,7 @@
         },
         {
             "name": "bonakor/alm-seo",
-            "version": "1.0",
+            "version": "1.1",
             "dist": {
                 "type": "zip",
                 "url": "https://candidatarien.com/wp-content/ajax-load-more-seo.zip",
