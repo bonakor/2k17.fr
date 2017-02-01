@@ -45,5 +45,5 @@ endforeach;
 
 wp_reset_postdata();
 } */?>
-<?php echo do_shortcode('[ajax_load_more cache="true" cache_id="8601006533" preloaded="true" repeater="template_4" post_type="post"]'); ?>
+<?php echo do_shortcode('[ajax_load_more cache="true" cache_id="8601006533" [ajax_load_more preloaded="true"preloaded="true" repeater="template_4"  preloaded_amount="6" post_type="post" posts_per_page="6"]'); ?>
 </section>
