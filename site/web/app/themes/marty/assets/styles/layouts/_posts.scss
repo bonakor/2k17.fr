@@ -310,11 +310,19 @@
   .chapeau {
     border: none;
   }
+  .fp-end {
+    padding-top: 2rem;
+    background-color: $bleu;
+    color: #fff;
+    h2 {
+      color: #fff;
+    }
+  }
   .fp-edited {
     background-color: $bleu;
     width: 100%;
     color: #fff;
-    margin-top: 3rem;
+    padding-top: 3rem;
     padding: 2rem 7vw;
     .avatar-container {margin: auto .8rem;}
     .author {
