@@ -2,7 +2,7 @@
   <?php
   $postslist = get_posts( array(
     'posts_per_page'         => '4',
-    'ignore_sticky_posts'    => true,
+    'tag'                    => 'lista',
   ) );
 
   if ( $postslist ) {

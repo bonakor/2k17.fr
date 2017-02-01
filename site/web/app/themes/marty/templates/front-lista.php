@@ -2,10 +2,10 @@
   $postslist = get_posts( array(
     'posts_per_page'         => '4',
   	'ignore_sticky_posts'    => true,
-  	'offset'                 => '0',
+  	'offset'                 => '4',
   ) ); ?>
   <section class="lista">
-    <?php
+    <?/*<?php
   if ( $postslist ) {
       foreach ( $postslist as $post ) :
           setup_postdata( $post );
@@ -44,5 +44,6 @@
 endforeach;
 
 wp_reset_postdata();
-} ?>
+} */?>
+<?php echo do_shortcode('[ajax_load_more cache="true" cache_id="8601006533" preloaded="true" repeater="template_4" post_type="post"]'; ?>
 </section>

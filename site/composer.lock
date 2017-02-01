@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ef615c6d241e98f175ba3d7218560e85",
-    "content-hash": "bfeb40169cb898e5b9babbae91f6c760",
+    "hash": "7160239903696755dcfde47c71757e84",
+    "content-hash": "dffa096ba1442d2284d5b0c0863b4d3c",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -503,15 +503,15 @@
         },
         {
             "name": "wpackagist-plugin/fb-instant-articles",
-            "version": "3.3",
+            "version": "3.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fb-instant-articles/",
-                "reference": "trunk"
+                "reference": "tags/3.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.zip",
+                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -603,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.1",
+            "version": "4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.1"
+                "reference": "tags/4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.zip",
                 "reference": null,
                 "shasum": null
             },

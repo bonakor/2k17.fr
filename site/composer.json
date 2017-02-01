@@ -71,7 +71,7 @@
 "type": "package",
 "package": {
 "name": "bonakor/alm-seo",
-"version": "^1.1",
+"version": "1.1",
 "type": "wordpress-plugin",
 "dist": {
   "type": "zip",
@@ -105,16 +105,16 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/wp-user-avatar": "^2.0",
     "wpackagist-plugin/contact-form-7": "^4.6",
-    "wpackagist-plugin/wordpress-seo": "^4.0",
+    "wpackagist-plugin/wordpress-seo": "^4.2",
     "wpackagist-plugin/ajax-load-more": "^2.13",
     "bonakor/alm-preloaded": "^1.0",
     "bonakor/alm-cache": "^1.0",
     "bonakor/alm-repeaters": "^1.0",
-    "bonakor/alm-seo": "^1.0",
     "wpackagist-plugin/onesignal-free-web-push-notifications": "^1.13",
-    "wpackagist-plugin/fb-instant-articles": "^3.3",
+    "wpackagist-plugin/fb-instant-articles": "^3.3.1",
     "wpackagist-plugin/google-sitemap-generator": "^4.0",
-    "wpackagist-plugin/slack": "^0.5.1"
+    "wpackagist-plugin/slack": "^0.5.1",
+    "bonakor/alm-seo": "^1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
