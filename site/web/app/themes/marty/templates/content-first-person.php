@@ -6,6 +6,7 @@
   $person_name = $person['display_name'];
 	$person_id = $person['ID'];
 ?>
+<div class="fp-end"><?php the_field('fp_end'); ?></div>
 <div class="fp-edited">
 	<div class="fp-edited-in">
   <figure class="avatar-container">
