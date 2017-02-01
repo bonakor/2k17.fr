@@ -285,7 +285,13 @@ body.home {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
+.alm-reveal {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
     article {
       padding: 0 1em;
       margin: 1rem auto;
