@@ -36,7 +36,7 @@ if ($the_query->have_posts()) {      ?>
                         echo ' active';
                       }
                     ?>">
-                    <article <?php post_class(''); ?>>
+                    <a href=<?php the_permalink(); ?><article <?php post_class(''); ?>>
                       <?php if ( has_post_format( 'video' )) { ?>
 <figure><svg><?php get_template_part( 'assets/svg/inline', 'play_button.svg' ); ?></svg></figure>
 <?php }; ?>
@@ -46,7 +46,7 @@ if ($the_query->have_posts()) {      ?>
       </figure><div class="author">
         <address class="card-text byline vcard d-block"><?php the_author(); ?></address>
       </div></div>
-      </article></div>
+    </article></a></div>
                 <?php
                 $count++;
               }
