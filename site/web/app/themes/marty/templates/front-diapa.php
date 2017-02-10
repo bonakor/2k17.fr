@@ -36,7 +36,7 @@ if ($the_query->have_posts()) {      ?>
                         echo ' active';
                       }
                     ?>">
-                    <a href=<?php the_permalink(); ?><article <?php post_class(''); ?>>
+                    <a href="<?php the_permalink(); ?>"><article <?php post_class(''); ?>>
                       <?php if ( has_post_format( 'video' )) { ?>
 <figure><svg><?php get_template_part( 'assets/svg/inline', 'play_button.svg' ); ?></svg></figure>
 <?php }; ?>
