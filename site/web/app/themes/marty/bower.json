@@ -12,7 +12,9 @@
     "jquery-touchswipe": "^1.6.18",
     "slideout.js": "^1.0.1",
     "clipboard": "^1.5.16",
-    "cookieconsent": "^3.0.4"
+    "cookieconsent": "^3.0.4",
+    "d3": "^4.7.1",
+    "radar-chart-d3": "^1.2.1"
   },
   "overrides": {
     "font-awesome": {
@@ -21,5 +23,8 @@
         "./fonts/*"
       ]
     }
+  },
+  "resolutions": {
+    "d3": "^4.7.1"
   }
 }

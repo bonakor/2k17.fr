@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebc50d5394a98ece381a6b1fbeee48b2",
-    "content-hash": "2296144d2104eb4b98040c4c6fc2d24d",
+    "hash": "69643f6620308f9ddbf94854841e9c8e",
+    "content-hash": "0c237525f846b087b054c0f914918ac4",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.5",
+            "version": "5.5.9",
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NzE4ODJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE2LTAxLTAzIDE3OjI1OjM0",
@@ -20,7 +20,7 @@
         },
         {
             "name": "bonakor/alm-cache",
-            "version": "1.0",
+            "version": "1.3",
             "dist": {
                 "type": "zip",
                 "url": "https://candidatarien.com/wp-content/ajax-load-more-cache.zip",
@@ -53,7 +53,7 @@
         },
         {
             "name": "bonakor/alm-seo",
-            "version": "1.1",
+            "version": "1.3",
             "dist": {
                 "type": "zip",
                 "url": "https://candidatarien.com/wp-content/ajax-load-more-seo.zip",
@@ -443,7 +443,7 @@
         },
         {
             "name": "wpackagist-plugin/ajax-load-more",
-            "version": "2.13.1",
+            "version": "2.14.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ajax-load-more/",
@@ -483,15 +483,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.6.1",
+            "version": "4.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.6.1"
+                "reference": "tags/4.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -503,15 +503,15 @@
         },
         {
             "name": "wpackagist-plugin/fb-instant-articles",
-            "version": "3.3.1",
+            "version": "3.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fb-instant-articles/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -603,15 +603,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.2.1",
+            "version": "4.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.2.1"
+                "reference": "tags/4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.4.zip",
                 "reference": null,
                 "shasum": null
             },
