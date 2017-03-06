@@ -113,8 +113,7 @@
     "wpackagist-plugin/google-sitemap-generator": "^4.0",
     "wpackagist-plugin/slack": "^0.5.1",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.5",
-    "bonakor/alm-seo": "^1.3",
-    "bonakor/alm-cache": "^1.3"
+    "bonakor/alm-seo": "^1.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*"
