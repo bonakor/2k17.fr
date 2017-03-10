@@ -1,4 +1,21 @@
 /* GENERAL */
+.radarChart {
+  /*fill: $vert;*/
+  text-align: center;
+/*  text-shadow: 0 1px 0 #eee, 1px 0 0 #eee, -1px 0 0 #eee, 0 -1px 0 #eee;*/
+  cursor: default;
+/*background-color: $bleu;*/
+  .tooltip {
+    fill: #333333;
+  }
+/*text {
+  fill: $vert;
+}*/
+  .axisWrapper line {
+    stroke: $vert !important;
+  }
+}
+
 .single .post {
   .card {
     border: none;
@@ -6,11 +23,15 @@
     margin: 0;
     border-radius: 0;
   }
-  .persona, .video, .listicle {
+
+  .listicle,
+  .persona,
+  .video {
     article {
-  padding-bottom: 3rem;
-}
-}
+      padding-bottom: 3rem;
+    }
+  }
+
   .type_article {
     background: $vert;
     font-style: italic;
@@ -21,7 +42,6 @@
     border-top: 0.8rem solid $vert;
     background: $bleu;
     color: $vert;
-
     margin: auto;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -41,7 +61,7 @@
     max-width: 100%;
     position: relative;
     display: block;
-  /*  height: 0;*/
+    /*  height: 0;*/
     padding: 0;
     overflow: hidden;
   }
@@ -59,57 +79,61 @@
     line-height: 2;
   }
 
-  .breadcrumb_last, .breadcrumbs a {
-    margin: 0.6rem .3rem;
-  color: $bleu;
+  .breadcrumb_last,
+  .breadcrumbs a {
+    margin: 0.6rem 0.3rem;
+    color: $bleu;
     text-transform: uppercase;
-  /*  border-top: 0.0125rem solid $bleu;*/
-/*    padding: 0.1rem 0;*/
+    /*  border-top: 0.0125rem solid $bleu;*/
+    /*    padding: 0.1rem 0;*/
   }
-  .breadcrumbs a:hover {
-  /*    border-bottom: 0.0125rem solid $violet;*/
-    }
 
-  .breadcrumb_last, .breadcrumbs {
-    a{
+  .breadcrumbs a:hover {
+    /*    border-bottom: 0.0125rem solid $violet;*/
+  }
+
+  .breadcrumb_last,
+  .breadcrumbs {
+    a {
       position: relative;
       display: inline-block;
       text-decoration: none;
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      transition: all .3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
     }
 
-    a:hover{
+    a:hover {
       color: $violet;
     }
 
-    a:before, a:after{
+    a:after,
+    a:before {
       content: '';
       background: $violet;
       position: absolute;
       width: 0;
       height: 0.125rem;
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      transition: all .3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      transition: all 0.3s linear;
     }
 
-    a:before{
+    a:before {
       top: 0;
       left: 0;
     }
 
-    a:after{
+    a:after {
       top: 100%;
       right: 0;
     }
 
-    a:hover:before, a:hover:after{
+    a:hover:after,
+    a:hover:before {
       width: 100%;
-}
-}
-
+    }
+  }
 
   .avatar-container {
     margin: 0;
@@ -157,7 +181,8 @@
 
   .chapeau,
   h2,
-  p, ul {
+  p,
+  ul {
     max-width: $mw;
     margin-left: auto;
     margin-right: auto;
@@ -213,12 +238,15 @@
   .page-header {
     background-color: $violet;
     padding: 3vh 0 3vh 7vw;
+
     .meta {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
     }
+
     h1 {
-      margin: .8rem 0 1.5rem;
+      margin: 0.8rem 0 1.5rem;
     }
+
     .avatar-nom {
       margin-right: 1.3rem;
     }
@@ -227,7 +255,6 @@
   .chapeau {
     border-bottom: 0.08rem solid $violet;
     margin-bottom: 3rem;
-
   }
 }
 /* FIRST PERSON*/
@@ -236,9 +263,10 @@
     .entry-title {
       color: #fff;
       margin-top: 1rem;
+
       span {
         background: $violet;
-    line-height: 1.3em;
+        line-height: 1.3em;
       }
     }
 
@@ -259,8 +287,9 @@
     figure {
       margin: 0;
     }
-      .timer {
-      padding-right: .3rem;
+
+    .timer {
+      padding-right: 0.3rem;
     }
 
     svg {
@@ -294,6 +323,7 @@
       .author-info {
         margin-top: 2rem;
       }
+
       time {
         font-weight: bold;
       }
@@ -310,77 +340,91 @@
   .chapeau {
     border: none;
   }
+
   .fp-end {
     padding: 2rem 0;
     background-color: $bleu;
     color: #fff;
+
     h2 {
       color: #fff;
     }
+
     p {
       color: #fff !important;
     }
   }
+
   .fp-edited {
     background-color: $bleu;
     width: 100%;
     color: #fff;
-    padding-top: 3rem;
     padding: 2rem 7vw;
-    .avatar-container {margin: auto .8rem;}
+
+    .avatar-container {
+      margin: auto 0.8rem;
+    }
+
     .author {
       margin: auto 0;
     }
+
     .fp-edited-in {
       display: flex;
       flex-direction: row;
     }
+
     .edited-by {
       font-size: 60%;
     }
   }
 }
-
 /* VIDEO */
 .video,
 .video .page-header {
   background-color: $bleu;
+
   .meta,
   p {
     color: #fff;
   }
+
   h1 {
     margin: 2rem 0 1.5rem;
     font-size: 175%;
   }
 }
+
 .responsive-video {
   margin-bottom: 1rem;
 }
+
 .video .page-header {
   max-width: $mw;
   margin-left: auto;
   margin-right: auto;
 
   .meta {
-
     margin-bottom: auto;
     display: flex;
+
     .type_article {
       color: $bleu;
       font-size: 80%;
     }
+
     time {
       margin-left: auto;
-      margin-right:2rem;
+      margin-right: 2rem;
       font-weight: bold;
     }
   }
 }
-.video .breadcrumbs a, .video .breadcrumb_last {
-    color: #fff !important;
-  }
 
+.video .breadcrumb_last,
+.video .breadcrumbs a {
+  color: #fff !important;
+}
 /* PERSONA*/
 .persona {
   .page-header {
@@ -404,7 +448,7 @@
       -webkit-transition: background-position 0.15s;
       transition: background-position 0.15s;
       text-transform: lowercase;
-      margin-left: .8rem;
+      margin-left: 0.8rem;
     }
 
     figure {
@@ -449,11 +493,13 @@
       margin: 0 auto 2rem;
       display: flex;
       flex-direction: column;
-figcaption {
-  border: none;
-  background: none;
-  color: #fff;
-}
+
+      figcaption {
+        border: none;
+        background: none;
+        color: #fff;
+      }
+
       h2 {
         border: none;
         padding: 0;
@@ -462,11 +508,11 @@ figcaption {
       }
 
       .h6 {
-        margin: .5rem auto 1.5rem;
+        margin: 0.5rem auto 1.5rem;
       }
 
       a {
-            margin: auto;
+        margin: auto;
         color: #fff;
         padding: 0.3rem 0.8rem;
         background-color: $violet;
@@ -476,10 +522,10 @@ figcaption {
         box-shadow: 0.4em 0.4em 0 0 $vert;
         font-weight: bold;
       }
-.perso-pic {
-      margin: 5rem auto 0;
-}
 
+      .perso-pic {
+        margin: 5rem auto 0;
+      }
     }
 
     .element-perso {

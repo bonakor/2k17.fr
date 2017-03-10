@@ -1,0 +1,44 @@
+[
+  {
+    "proposition":"Mariage pour tous",
+    "values":[
+      {
+        "critere":"Réalisable",
+        "proposition":"Mariage pour tous",
+        "score":4,
+        "description": "test"
+
+      },
+      {
+        "critere":"Impact économique",
+        "proposition":"Mariage pour tous",
+        "score":3,
+        "description": "test très long pour tester ce que ça donne quand c'est très long, même si je m'en dote un epu"
+      },
+      {
+        "critere":"Atteinte des objectifs",
+        "proposition":"Mariage pour tous",
+        "score":5,
+        "description": "test très long pour tester ce que ça donne quand c'est très long, même si je m'en dote un epu"
+      },
+      {
+        "critere":"Rapport cible/concret",
+        "proposition":"Mariage pour tous",
+        "score":5,
+        "description": "test"
+      },
+      {
+        "critere":"Nombre de personnes touchées",
+        "proposition":"Mariage pour tous",
+        "score":3,
+        "description": "test"
+      },
+      {
+        "critere":"Ajoute un droit ou le restreint",
+        "proposition":"Mariage pour tous",
+        "score":null,
+        "description": "test"
+      }
+    ]
+  }
+]

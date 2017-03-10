@@ -110,7 +110,13 @@ function assets() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
+  if (is_single(array('583', '171'))) {
+    wp_enqueue_script('d3.min.js', Assets\asset_path('scripts/d3.min.js'), ['jquery'], null, false);
+    wp_enqueue_script('d3-legend.js', Assets\asset_path('scripts/d3-legend.js'), ['jquery'], null, false);
+    wp_enqueue_script('radarChart.js', Assets\asset_path('scripts/radarChart.js'), ['jquery'], null, false);
 
+        wp_enqueue_script('custom.js', Assets\asset_path('scripts/custom.js'), ['jquery'], null, true);
+  }
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
