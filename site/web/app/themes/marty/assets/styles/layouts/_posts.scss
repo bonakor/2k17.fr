@@ -1,10 +1,11 @@
 /* GENERAL */
 .radarChart {
-  /*fill: $vert;*/
   text-align: center;
-/*  text-shadow: 0 1px 0 #eee, 1px 0 0 #eee, -1px 0 0 #eee, 0 -1px 0 #eee;*/
-  cursor: default;
-/*background-color: $bleu;*/
+ cursor: default;
+  .radarCircle, .radarInvisibleCircle {
+    cursor: pointer !important;
+  }
+
   .tooltip {
     fill: #333333;
   }

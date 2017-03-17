@@ -16,7 +16,7 @@ function RadarChart(id, data, options) {
 	 labelFactor: 1.25, 			//How much farther than the radius of the outer circle should the labels be placed
 	 wrapWidth: 70, 			//The number of pixels after which a label needs to be given a new line
 	 opacityArea: 0.35, 			//The opacity of the area of the blob
-	 dotRadius: 4, 				//The size of the colored circles of each blog
+	 dotRadius: 5, 				//The size of the colored circles of each blog
 	 opacityCircles: 0.1, 			//The opacity of the circles of each blob
 	 strokeWidth: 2, 			//The width of the stroke around each blob
 	 roundStrokes: true,			//If true the area and stroke will follow a round path (cardinal-closed)
@@ -159,7 +159,7 @@ function RadarChart(id, data, options) {
 	//Append the labels at each axis
 	axis.append("text")
 		.attr("class", "legend")
-		.style("font-size", "11px")
+		.style("font-size", "13px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
@@ -255,6 +255,7 @@ function RadarChart(id, data, options) {
 		.attr("cy", function(d,i){ return rScale(d[value]) * Math.sin(angleSlice*i - Math.PI/2); })
 		.style("fill", "none")
 		.style("pointer-events", "all")
+		.style("cursor", "pointer !important")
 		.on("mouseover", function(d,i) {
 			newX =  parseFloat(d3.select(this).attr('cx')) - 10;
 			newY =  parseFloat(d3.select(this).attr('cy')) - 10;

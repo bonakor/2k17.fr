@@ -1,43 +1,43 @@
 [
   {
-    "proposition":"Mariage pour tous",
+    "proposition":"Légalisation du cannabis",
     "values":[
       {
         "critere":"Réalisable",
-        "proposition":"Mariage pour tous",
-        "score":4,
-        "description": "test"
+        "proposition":"Légalisation du cannabis",
+        "score":3,
+        "description": "Il faudra une majorité"
 
       },
       {
         "critere":"Impact économique",
-        "proposition":"Mariage pour tous",
-        "score":3,
-        "description": "test très long pour tester ce que ça donne quand c'est très long, même si je m'en dote un epu"
+        "proposition":"Légalisation du cannabis",
+        "score":4,
+        "description": "La légalisation devrait rapporter 26 euros par mois et par habitant"
       },
       {
         "critere":"Atteinte des objectifs",
-        "proposition":"Mariage pour tous",
-        "score":5,
-        "description": "test très long pour tester ce que ça donne quand c'est très long, même si je m'en dote un epu"
+        "proposition":"Légalisation du cannabis",
+        "score":3,
+        "description": "La mesure peut atteindre son objectif, mais pas sans effets secondaires négatifs"
       },
       {
         "critere":"Rapport cible/concret",
-        "proposition":"Mariage pour tous",
+        "proposition":"Légalisation du cannabis",
         "score":5,
-        "description": "test"
+        "description": "Cette mesure cible les consommateurs, et a -auprès d'eux- un marqueur d'avancée 'sociétale'."
       },
       {
         "critere":"Nombre de personnes touchées",
-        "proposition":"Mariage pour tous",
-        "score":3,
-        "description": "test"
+        "proposition":"Légalisation du cannabis",
+        "score":5,
+        "description": "Un Français sur deux a consommé du cannabis, et plus d'un million en consomment régulièrement"
       },
       {
         "critere":"Ajoute un droit ou le restreint",
-        "proposition":"Mariage pour tous",
-        "score":null,
-        "description": "test"
+        "proposition":"Légalisation du cannabis",
+        "score":5,
+        "description": "Une légaltion du cannabis ajoute un droit"
       }
     ]
   }
