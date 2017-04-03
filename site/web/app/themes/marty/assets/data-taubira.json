@@ -1,0 +1,44 @@
+[
+  {
+    "proposition":"Retour sur la loi Taubira",
+    "values":[
+      {
+        "critere":"Réalisable",
+        "proposition":"Retour sur la loi Taubira",
+        "score":2,
+        "description": "Difficile : les juristes considèrent compliqué de revenir sur un droit civil"
+
+      },
+      {
+        "critere":"Impact économique",
+        "proposition":"Retour sur la loi Taubira",
+        "score":3,
+        "description": "L'impact d'une telle mesure est neutre. A condition de ne pas compter les frais administratifs occasionnés."
+      },
+      {
+        "critere":"Atteinte des objectifs",
+        "proposition":"Retour sur la loi Taubira",
+        "score":0,
+        "description": "Que vise la mesure ? Plaire à l'électorat de la Manif pour Tous ou réduire les droits d'une partie de la population ?"
+      },
+      {
+        "critere":"Rapport cible/concret",
+        "proposition":"Retour sur la loi Taubira",
+        "score":1,
+        "description": "Une telle proposition semble surtout électoraliste. Elle s'adresse à ceux qui ne sont pas concernés."
+      },
+      {
+        "critere":"Nombre de personnes touchées",
+        "proposition":"Retour sur la loi Taubira",
+        "score":3,
+        "description": "Nous avons utilisé les chiffres de l'INSEE sur le nombre de mariages entre personnes de même sexe."
+      },
+      {
+        "critere":"Ajoute un droit ou le restreint",
+        "proposition":"Retour sur la loi Taubira",
+        "score":1,
+        "description": "Une retour sur la loi Taubira enlève un droit"
+      }
+    ]
+  }
+]

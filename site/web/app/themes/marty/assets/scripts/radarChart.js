@@ -257,29 +257,34 @@ function RadarChart(id, data, options) {
 		.style("pointer-events", "all")
 		.style("cursor", "pointer !important")
 		.on("mouseover", function(d,i) {
-			newX =  parseFloat(d3.select(this).attr('cx')) - 10;
-			newY =  parseFloat(d3.select(this).attr('cy')) - 10;
+			tooltip.style("opacity", 0.9)
+		    .html(d.description)
+		    .style("left", (d3.event.pageX) + "px")
+		    .style("top", (d3.event.pageY) + "px");
 
-			tooltip
-				.attr('x', newX)
-				.attr('y', newY)
-				.attr("dy", "0.35em")
-				.text(d.description)
-				.transition().duration(200)
-				.style('opacity', 1)
-				.call(wrap, cfg.wrapWidth);
 		})
 
 		.on("mouseout", function(){
-			tooltip.transition().duration(200)
-				.style("opacity", 0);
+			tooltip.style("opacity", 0);
 		});
 
-	//Set up the small tooltip for when you hover over a circle
-	var tooltip = g.append("text")
-		.attr("class", "tooltip")
-		.style("opacity", 0);
-
+		//Set up the small tooltip for when you hover over a circle
+		  var tooltip = d3.select("body")
+		    .append("div").classed("tooltip", true)
+		    .attr("opacity", 0)
+		    .style({
+		      "position": "absolute",
+		      "color": "black",
+		      "font-size": "10px",
+		      "width": "100px",
+		      "height": "auto",
+		      "padding": "5px",
+		      "border": "2px solid gray",
+		      "border-radius": "5px",
+		      "pointer-events": "none",
+		      "opacity": "0",
+		      "background": "#f4f4f4"
+		    });
 	/////////////////////////////////////////////////////////
 	/////////////////// Helper Functions ////////////////////
 	/////////////////////////////////////////////////////////

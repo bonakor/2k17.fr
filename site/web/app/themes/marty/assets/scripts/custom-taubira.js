@@ -29,8 +29,7 @@ var radarChartOptions = {
   legendTooltip : "description",
   value: "score",
 };
-
 //Load the data and Call function to draw the Radar chart
-d3.json("/app/themes/marty/assets/data-cannabis.json", function(error, data){
+d3.json("/app/themes/marty/assets/data-taubira.json", function(error, data){
   RadarChart(".radarChart", data, radarChartOptions);
 });
