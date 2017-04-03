@@ -119,7 +119,7 @@ function assets() {
   wp_enqueue_script('custom.js', Assets\asset_path('scripts/custom.js'), ['jquery'], null, true);
   }
   if (is_single(array('655'))) {
-  wp_enqueue_script('custom-taubira.js', Assets\asset_path('scripts/custom.js'), ['jquery'], null, true);
+  wp_enqueue_script('custom-taubira.js', Assets\asset_path('scripts/custom-taubira.js'), ['jquery'], null, true);
   }
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
