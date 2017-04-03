@@ -230,7 +230,7 @@ gulp.task('jshint', function() {
   .concat('!assets/scripts/d3-legend.js')
   .concat('!assets/scripts/custom.js')
   .concat('!assets/scripts/radarChart.js')
-  .concat('!assets/scripts/d3.min.js'))
+  .concat('!assets/scripts/d3.min.js')
     .concat('!assets/scripts/custom-taubira.js'))
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
