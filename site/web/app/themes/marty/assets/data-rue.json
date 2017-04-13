@@ -1,0 +1,44 @@
+[
+  {
+    "proposition":"Revenu universel d'existence",
+    "values":[
+      {
+        "critere":"Réalisable",
+        "proposition":"Revenu universel d'existence",
+        "score":3,
+        "description": "Il faudra une majorité"
+
+      },
+      {
+        "critere":"Impact économique",
+        "proposition":"Revenu universel d'existence",
+        "score":5,
+        "description": "Le revenu universel serait d'environ 600 € par personne et par mois, pour les bénéficiaires. Même s'il remplace le RSA, ses bénéfices sont suffisants par habitant pour lui obtenir la meilleure note à ce critère."
+      },
+      {
+        "critere":"Atteinte des objectifs",
+        "proposition":"Revenu universel d'existence",
+        "score":3,
+        "description": "La dernière mouture de Benoit Hamon la limite aux plus faibles revenus : pas si bête, c'est sur eux qu'un RUE aura le plus d'impact"
+},
+      {
+        "critere":"Rapport cible/concret",
+        "proposition":"Revenu universel d'existence",
+        "score":5,
+        "description": "Cette mesure cible en priorité les jeunes et la population la moins aisée. Ca tombe bien, ce sont eux qui en bénéficient."
+      },
+      {
+        "critere":"Nombre de personnes touchées",
+        "proposition":"Revenu universel d'existence",
+        "score":4,
+        "description": "D'après le candidat PS, 10 millions de personnes bénéficieront de la première vague de la mesure."
+      },
+      {
+        "critere":"Ajoute un droit ou le restreint",
+        "proposition":"Revenu universel d'existence",
+        "score":5,
+        "description": "Une revenu universel d'existence ajoute un droit"
+      }
+    ]
+  }
+]

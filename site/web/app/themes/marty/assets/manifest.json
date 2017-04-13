@@ -37,6 +37,11 @@
         "scripts/custom.js"
       ]
     },
+    "custom-rue.js": {
+      "files": [
+        "scripts/custom-rue.js"
+      ]
+    },
     "custom-taubira.js": {
       "files": [
         "scripts/custom-taubira.js"
