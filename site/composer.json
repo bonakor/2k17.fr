@@ -47,7 +47,7 @@
 "type": "package",
 "package": {
 "name": "bonakor/alm-preloaded",
-"version": "1.0",
+"version": "1.4",
 "type": "wordpress-plugin",
 "dist": {
   "type": "zip",
@@ -111,7 +111,7 @@
     "wpackagist-plugin/onesignal-free-web-push-notifications": "^1.13",
     "wpackagist-plugin/fb-instant-articles": "^3.3.1",
     "wpackagist-plugin/google-sitemap-generator": "^4.0",
-    "wpackagist-plugin/slack": "^0.5.1",
+    "wpackagist-plugin/slack": "^0.6.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.5",
     "bonakor/alm-seo": "^1.3"
   },
