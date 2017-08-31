@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0cbcc0568001071dc59746df32fbed77",
-    "content-hash": "ae92a33c18ae39772852373bf17b97cd",
+    "hash": "9d9e915db3562eb6527cb1431b7cd779",
+    "content-hash": "577f82c2962a3948e65cf77bdf206b1a",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -20,7 +20,7 @@
         },
         {
             "name": "bonakor/alm-preloaded",
-            "version": "1.0",
+            "version": "1.4",
             "dist": {
                 "type": "zip",
                 "url": "https://candidatarien.com/wp-content/ajax-load-more-preloaded.zip",
@@ -238,16 +238,16 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
                 "shasum": ""
             },
             "require": {
@@ -276,7 +276,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2017-07-17 20:41:59"
         },
         {
             "name": "roots/soil",
@@ -472,15 +472,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.7",
+            "version": "4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.7"
+                "reference": "tags/4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -492,15 +492,15 @@
         },
         {
             "name": "wpackagist-plugin/fb-instant-articles",
-            "version": "3.3.3",
+            "version": "3.3.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fb-instant-articles/",
-                "reference": "tags/3.3.3"
+                "reference": "tags/3.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -512,15 +512,15 @@
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
-            "version": "4.0.8",
+            "version": "4.0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-sitemap-generator/",
-                "reference": "tags/4.0.8"
+                "reference": "tags/4.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -532,7 +532,7 @@
         },
         {
             "name": "wpackagist-plugin/onesignal-free-web-push-notifications",
-            "version": "1.14.1",
+            "version": "1.16.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/onesignal-free-web-push-notifications/",
@@ -540,7 +540,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/onesignal-free-web-push-notifications.zip?timestamp=1492049713",
+                "url": "https://downloads.wordpress.org/plugin/onesignal-free-web-push-notifications.zip?timestamp=1501890301",
                 "reference": null,
                 "shasum": null
             },
@@ -572,15 +572,15 @@
         },
         {
             "name": "wpackagist-plugin/slack",
-            "version": "0.5.1",
+            "version": "0.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/slack/",
-                "reference": "tags/0.5.1"
+                "reference": "tags/0.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/slack.0.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/slack.0.6.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -592,15 +592,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.6",
+            "version": "4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.6"
+                "reference": "tags/4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.9.zip",
                 "reference": null,
                 "shasum": null
             },
