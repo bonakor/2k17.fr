@@ -1,8 +1,5 @@
 ---
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_initialize_before | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_initialize_before | default('../hooks/example.yml') }}"
   tags: deploy-initialize-before
 
 - name: Initialize
@@ -11,8 +8,5 @@
     path: "{{ project_root }}"
     state: present
 
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_initialize_after | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_initialize_after | default('../hooks/example.yml') }}"
   tags: deploy-initialize-after

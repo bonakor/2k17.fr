@@ -1,17 +1,6 @@
 ---
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_update_before | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_update_before | default('../hooks/example.yml') }}"
   tags: deploy-update-before
-
-- name: Add known_hosts
-  known_hosts:
-    name: "{{ item.name }}"
-    key: "{{ item.key | default(omit) }}"
-    path: "{{ item.path | default(omit) }}"
-    state: "{{ item.state | default('present') }}"
-  with_items: "{{ known_hosts | default([]) }}"
 
 - name: Check whether project source path is a git repo
   stat:
@@ -37,7 +26,7 @@
     repo: "{{ project_git_repo }}"
     dest: "{{ project_source_path }}"
     version: "{{ project_version }}"
-    accept_hostkey: "{{ project.repo_accept_hostkey | default(repo_accept_hostkey | default(true)) }}"
+    accept_hostkey: yes
   ignore_errors: true
   no_log: true
   register: git_clone
@@ -51,8 +40,5 @@
       > https://roots.io/trellis/docs/ssh-keys/#cloning-remote-repo-using-ssh-agent-forwarding
   when: git_clone | failed
 
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_update_after | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_update_after | default('../hooks/example.yml') }}"
   tags: deploy-update-after

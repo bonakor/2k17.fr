@@ -7,7 +7,6 @@
       ssh -S '{{ xdebug_tunnel_control_socket }}' -O exit '{{ xdebug_tunnel_control_identity }}'
     {% endif %}
   connection: local
-  become: no
   register: xdebug_tunnel
   ignore_errors: true
 

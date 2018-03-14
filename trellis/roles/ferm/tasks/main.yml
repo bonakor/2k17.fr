@@ -8,8 +8,9 @@
 
 - name: ensure ferm is installed
   apt:
-    name: "{{ ferm_package }}"
-    state: "{{ ferm_package_state | default(apt_security_package_state) }}"
+    pkg: ferm
+    state: latest
+    update_cache: true
     cache_valid_time: "{{ apt_cache_valid_time }}"
     install_recommends: no
   notify:
