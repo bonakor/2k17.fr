@@ -1,10 +1,13 @@
 ---
 - name: Install memcached
   apt:
-    name: "{{ item.key }}"
-    state: "{{ item.value }}"
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
     cache_valid_time: "{{ apt_cache_valid_time }}"
-  with_dict: "{{ memcached_packages }}"
+  with_items:
+  - memcached
+  - php-memcached
 
 - name: Copy the client configuration file
   template:

@@ -1,8 +1,5 @@
 ---
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_finalize_before | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_finalize_before | default('../hooks/example.yml') }}"
   tags: deploy-finalize-before
 
 - name: Finalize the deploy
@@ -11,12 +8,8 @@
     path: "{{ project_root }}"
     release: "{{ deploy_helper.new_release }}"
     state: finalize
-    keep_releases: "{{ project.deploy_keep_releases | default(deploy_keep_releases | default(omit)) }}"
 
-- include_tasks: "{{ include_path }}"
-  with_items: "{{ deploy_finalize_after | default([]) }}"
-  loop_control:
-    loop_var: include_path
+- include: "{{ deploy_finalize_after | default('../hooks/example.yml') }}"
   tags: deploy-finalize-after
 
 - debug:

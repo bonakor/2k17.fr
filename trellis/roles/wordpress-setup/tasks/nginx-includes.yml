@@ -22,9 +22,8 @@
     mode: 0755
   with_items: "{{ nginx_includes_templates.files | map(attribute='path') |
                   map('regex_replace', nginx_includes_pattern, '\\2') |
-                  map('dirname') | unique | list | sort
+                  map('dirname') | unique | select | list | sort
                }}"
-  when: nginx_includes_templates.files | count
 
 - name: Template files out to includes.d
   template:
